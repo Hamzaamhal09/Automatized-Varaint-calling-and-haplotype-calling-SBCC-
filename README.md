@@ -1,0 +1,2 @@
+This is a preliminary release of the pipeline. It currently contains only four rules, intended to test the stability of the package. A full version of the pipeline, including documentation, will be provided in the coming weeks.
+The complete release will include additional rules for quality control, read-to-variant calling, and haplotype calling using a pangenome graph built with PHG (Practical Haplotype Graph).
