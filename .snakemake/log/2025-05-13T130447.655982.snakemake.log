@@ -1,0 +1,45 @@
+host: selva
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+map_reads              1
+mark_duplicates        1
+total                  3
+
+Select jobs to execute...
+Execute 2 jobs...
+
+[Tue May 13 13:04:50 2025]
+localrule mark_duplicates:
+    input: /home/hamzaamhal/snakemake_pipline/scripts/02_mark_duplicates_sktest.sh
+    output: /home/hamzaamhal/snakemake_pipline/output/mark_duplicates_done.txt
+    jobid: 2
+    reason: Missing output files: /home/hamzaamhal/snakemake_pipline/output/mark_duplicates_done.txt
+    resources: tmpdir=/tmp
+
+
+[Tue May 13 13:04:50 2025]
+localrule map_reads:
+    input: /home/hamzaamhal/snakemake_pipline/scripts/mapping_sk.sh
+    output: /home/hamzaamhal/snakemake_pipline/output/mapping_done.txt
+    jobid: 1
+    reason: Missing output files: /home/hamzaamhal/snakemake_pipline/output/mapping_done.txt
+    resources: tmpdir=/tmp
+
+[Tue May 13 13:04:51 2025]
+Error in rule mark_duplicates:
+    jobid: 2
+    input: /home/hamzaamhal/snakemake_pipline/scripts/02_mark_duplicates_sktest.sh
+    output: /home/hamzaamhal/snakemake_pipline/output/mark_duplicates_done.txt
+    shell:
+        
+        bash /home/hamzaamhal/snakemake_pipline/scripts/02_mark_duplicates_sktest.sh > /home/hamzaamhal/snakemake_pipline/logfile/mark_duplicates_output.log 2>&1
+        touch /home/hamzaamhal/snakemake_pipline/output/mark_duplicates_done.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
