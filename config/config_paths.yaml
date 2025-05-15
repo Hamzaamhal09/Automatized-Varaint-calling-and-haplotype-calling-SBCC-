@@ -12,19 +12,25 @@ bam_dir: "/data/hamza/mapping/output/bam_files"
 flagstat_dir: "/data/hamza/mapping/output/flagstat"
 index_dir: "/data/hamza/mapping/output/index"
 idxstats_dir: "/data/hamza/mapping/output/idxstats"
-output_dir_markdup: "/data/hamza/markduplicate/bam_dup1" #markduplicates output files
+output_dir_markdup: "/data/hamza/markduplicate/bam_dup" #markduplicates output files
 metrics_dir: "/data/hamza/markduplicate/metrics_files1" #metrics of markduplicates
+output_dir_singl_gvcf: "/data/hamza/gvcf_files_Nodup2" # output dir for single gvcf
+
 # BWA tool path
 bwa_path: "/home/contrera/soft/bwa-m2-2.0pre2_x64-linux/bwa-mem2"
 GATK: "/home/contrera/soft/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar"
 # Number of threads
 threads: 20
+threads_variantcall: 7
 
 # Scripts
 mapping_script: "/home/hamzaamhal/snakemake_pipline/scripts/mapping_sk.sh"
 mark_duplicates_script: "/home/hamzaamhal/snakemake_pipline/scripts/02_mark_duplicates_sktest.sh"
+variant_calling_script: "/home/hamzaamhal/snakemake_pipline/scripts/03_variant_calling.single.gvcf.sh"
 # Done and log files
 mapping_done: "/home/hamzaamhal/snakemake_pipline/output/mapping_done.txt"
 mapping_output_log: "/home/hamzaamhal/snakemake_pipline/logfile/mapping_output.log"
 mark_duplicates_done: "/home/hamzaamhal/snakemake_pipline/output/mark_duplicates_done.txt"
 mark_duplicates_output_log: "/home/hamzaamhal/snakemake_pipline/logfile/mark_duplicates_output.log"
+variant_calling_done: "/home/hamzaamhal/snakemake_pipline/output/variant_calling_done.txt"
+variant_calling_log: "/home/hamzaamhal/snakemake_pipline/logfile/variant_calling_output.log"

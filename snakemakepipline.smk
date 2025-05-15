@@ -24,6 +24,12 @@ mapping_done = config_paths["mapping_done"]
 mark_duplicates_script = config_paths["mark_duplicates_script"]
 mark_duplicates_done = config_paths["mark_duplicates_done"]
 mark_duplicates_output_log = config_paths["mark_duplicates_output_log"]
+# path values for single vcf variant calling using haplotype caller
+
+variant_calling_script = config_paths["variant_calling_script"]
+variant_calling_done = config_paths["variant_calling_done"]
+variant_calling_output_log = config_paths["variant_calling_log"]
+
 
 # Final targets
 rule all:
@@ -31,7 +37,8 @@ rule all:
         expand("/home/hamzaamhal/calida_reads/results/quality_report/{name}_{unit}_fastqc.html", name=samples_name, unit=samples_unit),
         expand("/home/hamzaamhal/calida_reads/results/quality_report/{name}_{unit}_fastqc.zip", name=samples_name, unit=samples_unit),
         mapping_done,
-        mark_duplicates_done
+        mark_duplicates_done,
+        variant_calling_done
 
 rule quality_check:
     input:
@@ -63,5 +70,17 @@ rule mark_duplicates:
     shell:
         """
         bash {input.script} > {mark_duplicates_output_log} 2>&1
+        touch {output}
+        """
+rule variant_calling:
+    input:
+        script = variant_calling_script
+    output:
+        variant_calling_done
+    params:
+        log = variant_calling_output_log
+    shell:
+        """
+        bash {input.script} > {params.log} 2>&1
         touch {output}
         """

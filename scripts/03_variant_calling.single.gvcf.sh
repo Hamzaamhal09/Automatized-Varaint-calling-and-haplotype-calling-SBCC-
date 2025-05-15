@@ -5,23 +5,39 @@
 # Further modified by: Hamza
 
 # Directories and parameters
-GATK="/home/contrera/soft/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar"
-reference_genome="/data/hamza/reference/barley_v3_split_2_parts.fa"
-output_dir_markdup="/data/hamza/markduplicate/bam_dup/"
-output_dir="/data/hamza/gvcf_files_Nodup2"
-threads_variantcall=7
+
+
+# Path to the config file
+config_file="/home/hamzaamhal/snakemake_pipline/config/config_paths.yaml"
+
+# Read values from YAML config file
+GATK=$(yq eval '.GATK' $config_file)
+reference_genome=$(yq eval '.reference_genome' $config_file)
+output_dir_markdup=$(yq eval '.output_dir_markdup' $config_file)
+output_dir_singl_gvcf=$(yq eval '.output_dir_singl_gvcf' $config_file)
+threads_variantcall=$(yq eval '.threads_variantcall' $config_file)
+variant_calling_list=$(yq eval '.variant_calling_list' $config_file)
+
+# Check if any variable is empty
+if [ -z "$GATK" ] || [ -z "$reference_genome" ] || [ -z "$output_dir_markdup" ] || \
+   [ -z "$output_dir_singl_gvcf" ] || [ -z "$threads_variantcall" ] || [ -z "$variant_calling_list" ]; then
+    echo "Error: Missing required arguments in config file."
+    exit 1
+fi
+
+
 
 mkdir -p  $output_dir
 
 # File with the list of sample names
-variant_list="/home/hamzaamhal/variant_calling/Variant_calling_list.txt"
+variant_calling_list="/home/hamzaamhal/variant_calling/Variant_calling_list.txt"
 
 # Process each sample
-cat "$variant_list" | while read sample; do
+cat "$variant_calling_list" | while read sample; do
     echo "Processing sample: $sample"
 
     # Output file path
-    output_file="$output_dir/${sample}.g.vcf"
+    output_file="$output_dir_singl_gvcf/${sample}.g.vcf"
 
     # Check if output file already exists
     if [ -f "$output_file" ]; then
