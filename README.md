@@ -53,11 +53,11 @@ Defined in the PHG_snakmake.smk script. This section uses PHG to identify haplot
     Merged hvcf files
     Merge the single hvcf files into one hvcf file
 
-    # instalation guide 
+# instalation guide 
 
     first you will have to install conda and snakemke 
 
-    <pre> ```bash conda create -c conda-forge -c bioconda -n snakemake snakemake ``` </pre>
+<pre> ```bash conda create -c conda-forge -c bioconda -n snakemake snakemake ``` </pre>
 
 
 
