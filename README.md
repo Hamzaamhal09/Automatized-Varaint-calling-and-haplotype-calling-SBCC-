@@ -85,6 +85,15 @@ Install **bwa-mem2** and **samtools** for read mapping and BAM file processing:
 conda install -c bioconda bwa-mem2 samtools
 ```
 
+Install Picard , to run Picard we also need Java (OpenJDK) (we need at least version 17)
+
+```
+conda install -c conda-forge openjdk=17
+conda install -c bioconda picard
+
+```
+
+
 
 
 
