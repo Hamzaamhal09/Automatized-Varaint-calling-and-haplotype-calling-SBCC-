@@ -71,13 +71,20 @@ conda create -c conda-forge -c bioconda -n snakemake snakemake
 conda install -c conda-forge yq
 ```
 
-Install FastQC and MultiQC to analyse the sequence read quality
+Install **FastQC** and **MultiQC** to analyse the sequence read quality
 
 ```
 conda install -c bioconda fastqc
 conda install -c bioconda multiqc
 
 ```
+
+Install **bwa-mem2** and **samtools** for read mapping and BAM file processing:
+
+```
+conda install -c bioconda bwa-mem2 samtools
+```
+
 
 
 
