@@ -13,10 +13,10 @@ This is a preliminary release of the pipeline. You can:
 
 Defined in the snakemakepipline.smk script. This section performs the full variant discovery workflow using GATK haplotype caller :
 
-    check_quality
+    **check_quality**
     Runs a script to assess read quality and produces a completion flag file.
 
-    map_reads
+    **map_reads**
     Maps reads to the reference genome using a bash script and creates a completion marker.
 
     mark_duplicates
