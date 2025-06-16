@@ -13,10 +13,10 @@ This is a preliminary release of the pipeline. You can:
 
 Defined in the snakemakepipline.smk script. This section performs the full variant discovery workflow using GATK haplotype caller :
 
-    **check_quality**
+    check_quality
     Runs a script to assess read quality and produces a completion flag file.
 
-    **map_reads**
+    map_reads
     Maps reads to the reference genome using a bash script and creates a completion marker.
 
     mark_duplicates
@@ -85,14 +85,17 @@ Install **bwa-mem2** and **samtools** for read mapping and BAM file processing:
 conda install -c bioconda bwa-mem2 samtools
 ```
 
-Install Picard , to run Picard we also need Java (OpenJDK) (we need at least version 17)
+Install **Picard** , to run Picard we also need **Java** (OpenJDK) (we need at least **version 17**)
 
 ```
 conda install -c conda-forge openjdk=17
 conda install -c bioconda picard
 
 ```
-
+Install **GATK** for variant calling :
+```
+conda install -c bioconda gatk
+```
 
 
 
