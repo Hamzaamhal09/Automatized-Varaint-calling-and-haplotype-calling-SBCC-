@@ -1,4 +1,4 @@
-Pipeline Overview
+# Pipeline Overview
 
 This is a preliminary release of the pipeline. You can:
 
