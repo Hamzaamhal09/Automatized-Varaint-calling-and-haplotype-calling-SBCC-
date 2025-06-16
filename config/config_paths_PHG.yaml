@@ -1,0 +1,50 @@
+#path to phg 
+phgv2_path: "/home/hamzaamhal/map_sbcc_phgv2/phg/bin/phg"
+
+# dirctory to hvcf files
+hvcf_dir: "/scratch/PHG_v2/vcf_dbs/hvcf_files"
+# directory to the database
+
+db_path: "/scratch/PHG_v2/vcf_dbs"
+
+# info files
+key_file: "/home/hamzaamhal/map_sbcc_phgv2/keyfile1.txt" # key file for readmapping
+
+
+# index file output
+index_output_dir: "/home/hamzaamhal/map_sbcc_phgv2/output_hamza/index_files"
+#index file prefix 
+index_prefix: "myindex"
+
+# INDEX FILE INPUT FOR READ MAPPNG
+index_file: "/home/hamzaamhal/map_sbcc_phgv2/output_hamza/index_files/myindex.fmd"
+output_dir: "/home/hamzaamhal/map_sbcc_phgv2/output_hamza/read_mappings"
+min_mem_length: 80
+threads_readmapping: 40
+
+# path finding 
+
+
+
+path_keyfile: "/home/hamzaamhal/map_sbcc_phgv2/output_hamza/read_mappings/pathKeyFile.txt"
+reference_genome: "/scratch/PHG_v2/data/prepared_assemblies/MorexV3.fa"
+outputdir_find_paths: "/home/hamzaamhal/map_sbcc_phgv2/output_hamza/hvcf"
+
+
+
+#scripts
+PHG_INDEX_SCRIPT: "/home/hamzaamhal/snakemake_pipline2/scripts/08_index_pangenome.sh"
+PHG_MAPPING_SCRIPT: "/home/hamzaamhal/snakemake_pipline2/scripts/09_read_mapping.sh"
+
+PHG_INDEX_DONE: "/home/hamzaamhal/snakemake_pipline2/output/index_pangenome.done"
+PHG_INDEX_LOG: "/home/hamzaamhal/snakemake_pipline2/logfile/index_pangenome.log"
+
+
+PHG_MAPPING_DONE: "/home/hamzaamhal/snakemake_pipline2/output/read_mapping.done"
+PHG_MAPPING_LOG: "/home/hamzaamhal/snakemake_pipline2/logfile/read_mapping.log"
+
+
+
+PHG_FIND_PATHS_SCRIPT: "/home/hamzaamhal/snakemake_pipline2/scripts/10_find_paths.sh"
+PHG_FIND_PATHS_DONE: "/home/hamzaamhal/snakemake_pipline2/output/find_paths.done"
+PHG_FIND_PATHS_LOG: "/home/hamzaamhal/snakemake_pipline2/logfile/find_paths.log"

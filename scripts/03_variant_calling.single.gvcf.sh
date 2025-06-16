@@ -8,7 +8,7 @@
 
 
 # Path to the config file
-config_file="/home/hamzaamhal/snakemake_pipline/config/config_paths.yaml"
+config_file="/home/hamzaamhal/snakemake_pipline2/config/config_paths.yaml"
 
 # Read values from YAML config file
 GATK=$(yq eval '.GATK' $config_file)
@@ -27,10 +27,8 @@ fi
 
 
 
-mkdir -p  $output_dir
+mkdir -p  $output_dir_singl_gvcf
 
-# File with the list of sample names
-variant_calling_list="/home/hamzaamhal/variant_calling/Variant_calling_list.txt"
 
 # Process each sample
 cat "$variant_calling_list" | while read sample; do

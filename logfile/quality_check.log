@@ -1,0 +1,105 @@
+Running FastQC on /data/hamza/test_snakemake_dir/exome_SBCC/C2KPVACXX_1_18_1.fastq.gz...
+application/gzip
+Started analysis of C2KPVACXX_1_18_1.fastq.gz
+Approx 5% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 10% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 15% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 20% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 25% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 30% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 35% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 40% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 45% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 50% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 55% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 60% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 65% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 70% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 75% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 80% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 85% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 90% complete for C2KPVACXX_1_18_1.fastq.gz
+Approx 95% complete for C2KPVACXX_1_18_1.fastq.gz
+Analysis complete for C2KPVACXX_1_18_1.fastq.gz
+Running FastQC on /data/hamza/test_snakemake_dir/exome_SBCC/C2KPVACXX_1_18_2.fastq.gz...
+application/gzip
+Started analysis of C2KPVACXX_1_18_2.fastq.gz
+Approx 5% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 10% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 15% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 20% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 25% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 30% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 35% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 40% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 45% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 50% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 55% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 60% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 65% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 70% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 75% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 80% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 85% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 90% complete for C2KPVACXX_1_18_2.fastq.gz
+Approx 95% complete for C2KPVACXX_1_18_2.fastq.gz
+Analysis complete for C2KPVACXX_1_18_2.fastq.gz
+Running FastQC on /data/hamza/test_snakemake_dir/exome_SBCC/C2KPVACXX_1_19_1.fastq.gz...
+application/gzip
+Started analysis of C2KPVACXX_1_19_1.fastq.gz
+Approx 5% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 10% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 15% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 20% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 25% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 30% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 35% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 40% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 45% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 50% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 55% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 60% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 65% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 70% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 75% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 80% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 85% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 90% complete for C2KPVACXX_1_19_1.fastq.gz
+Approx 95% complete for C2KPVACXX_1_19_1.fastq.gz
+Analysis complete for C2KPVACXX_1_19_1.fastq.gz
+Running FastQC on /data/hamza/test_snakemake_dir/exome_SBCC/C2KPVACXX_1_19_2.fastq.gz...
+application/gzip
+Started analysis of C2KPVACXX_1_19_2.fastq.gz
+Approx 5% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 10% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 15% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 20% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 25% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 30% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 35% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 40% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 45% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 50% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 55% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 60% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 65% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 70% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 75% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 80% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 85% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 90% complete for C2KPVACXX_1_19_2.fastq.gz
+Approx 95% complete for C2KPVACXX_1_19_2.fastq.gz
+Analysis complete for C2KPVACXX_1_19_2.fastq.gz
+Running MultiQC...
+
+/// MultiQC 🔍 v1.25.1
+
+     version_check | MultiQC Version v1.28 now available!
+       file_search | Search path: /data/hamza/test_snakemake_dir/quality_results
+
+            fastqc | Found 4 reports
+
+     write_results | Data        : /data/hamza/test_snakemake_dir/quality_results/multiqc_data
+     write_results | Report      : /data/hamza/test_snakemake_dir/quality_results/multiqc_report.html
+           multiqc | MultiQC complete
+All done. FastQC and MultiQC reports are in /data/hamza/test_snakemake_dir/quality_results

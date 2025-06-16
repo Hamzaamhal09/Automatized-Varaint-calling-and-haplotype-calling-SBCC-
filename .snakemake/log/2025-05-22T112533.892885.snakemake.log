@@ -1,0 +1,26 @@
+host: selva
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 64
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+mark_duplicates        1
+total                  1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu May 22 11:25:33 2025]
+localrule mark_duplicates:
+    input: /home/hamzaamhal/snakemake_pipline2/scripts/02_mark_duplicates_sktest.sh
+    output: /home/hamzaamhal/snakemake_pipline2/output/mark_duplicates_done.txt
+    jobid: 0
+    reason: Missing output files: /home/hamzaamhal/snakemake_pipline2/output/mark_duplicates_done.txt
+    resources: tmpdir=/tmp
+
+[Thu May 22 13:09:05 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2025-05-22T112533.892885.snakemake.log

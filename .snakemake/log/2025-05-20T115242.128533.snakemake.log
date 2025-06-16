@@ -1,0 +1,22 @@
+host: selva
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 64
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+map_reads        1
+total            1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue May 20 11:52:42 2025]
+localrule map_reads:
+    input: /home/hamzaamhal/snakemake_pipline2/scripts/02_mapping.sh
+    output: /home/hamzaamhal/snakemake_pipline2/output/mapping_done.txt
+    jobid: 0
+    reason: Missing output files: /home/hamzaamhal/snakemake_pipline2/output/mapping_done.txt
+    resources: tmpdir=/tmp
+

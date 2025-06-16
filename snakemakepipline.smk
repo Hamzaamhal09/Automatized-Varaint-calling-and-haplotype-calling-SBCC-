@@ -1,15 +1,15 @@
 import yaml
 
 # Load general config
-with open("/home/hamzaamhal/snakemake_pipline/config/config.yaml") as f:
+with open("/home/hamzaamhal/snakemake_pipline2/config/config.yaml") as f:
     config_general = yaml.safe_load(f)
 
 # Load path config
-with open("/home/hamzaamhal/snakemake_pipline/config/config_paths.yaml") as f:
+with open("/home/hamzaamhal/snakemake_pipline2/config/config_paths.yaml") as f:
     config_paths = yaml.safe_load(f)
 
 # Set the active config file
-configfile: "/home/hamzaamhal/snakemake_pipline/config/config_paths.yaml"
+configfile: "/home/hamzaamhal/snakemake_pipline2/config/config_paths.yaml"
 
 # Input values
 samples_name = config_general["samples_name"]
@@ -31,27 +31,34 @@ variant_calling_done = config_paths["variant_calling_done"]
 variant_calling_output_log = config_paths["variant_calling_log"]
 
 
+# Genotyping paths from config
+genotype_all_script = config_paths["genotype_all_script"]
+genotype_all_output_log = config_paths["genotype_all_output_log"]
+genotype_all_output = config_paths["genotype_all_output"]
+
 # Final targets
 rule all:
     input:
-        expand("/home/hamzaamhal/calida_reads/results/quality_report/{name}_{unit}_fastqc.html", name=samples_name, unit=samples_unit),
-        expand("/home/hamzaamhal/calida_reads/results/quality_report/{name}_{unit}_fastqc.zip", name=samples_name, unit=samples_unit),
+        config["CHECK_QUALITY_DONE"],
         mapping_done,
         mark_duplicates_done,
-        variant_calling_done
+        variant_calling_done,
+        genotype_all_output,
+        config["COMBINE_CHR_DONE"],
+        config["FILTER_VCF_DONE"]
 
-rule quality_check:
+rule check_quality:
     input:
-        fq1 = expand("/home/hamzaamhal/calida_reads/data/{name}_{unit}_R1.fastq.gz", name=samples_name, unit=samples_unit),
-        fq2 = expand("/home/hamzaamhal/calida_reads/data/{name}_{unit}_R2.fastq.gz", name=samples_name, unit=samples_unit)
+        script = config["CHECK_QUALITY_SCRIPT"]
     output:
-        html = expand("/home/hamzaamhal/calida_reads/results/quality_report/{name}_{unit}_fastqc.html", name=samples_name, unit=samples_unit),
-        zip = expand("/home/hamzaamhal/calida_reads/results/quality_report/{name}_{unit}_fastqc.zip", name=samples_name, unit=samples_unit)
+        config["CHECK_QUALITY_DONE"]
+    params:
+        log = config["CHECK_QUALITY_LOG"]
     shell:
         """
-        fastqc -o /home/hamzaamhal/calida_reads/results/quality_report {input.fq1} {input.fq2}
+        nohup bash {input.script} > {params.log} 2>&1
+        touch {output}
         """
-
 rule map_reads:
     input:
         script = mapping_script
@@ -59,7 +66,7 @@ rule map_reads:
         mapping_done
     shell:
         """
-        bash {input.script} > {mapping_output_log} 2>&1
+        nohup bash {input.script} > {mapping_output_log} 2>&1
         touch {output}
         """
 rule mark_duplicates:
@@ -69,7 +76,7 @@ rule mark_duplicates:
         mark_duplicates_done
     shell:
         """
-        bash {input.script} > {mark_duplicates_output_log} 2>&1
+        nohup bash {input.script} > {mark_duplicates_output_log} 2>&1
         touch {output}
         """
 rule variant_calling:
@@ -79,6 +86,42 @@ rule variant_calling:
         variant_calling_done
     params:
         log = variant_calling_output_log
+    shell:
+        """
+        nohup bash {input.script} > {params.log} 2>&1
+        touch {output}
+        """
+rule genotype_all:
+    input:
+        script = genotype_all_script
+    output:
+        genotype_all_output
+    params:
+        log = genotype_all_output_log
+    shell:
+        """
+        nohup bash {input.script} > {params.log} 2>&1
+        touch {output}
+        """
+rule combine_chr_update_coordinates:
+    input:
+        script = config["COMBINE_CHR_SCRIPT"]
+    output:
+        config["COMBINE_CHR_DONE"]
+    params:
+        log = config["COMBINE_CHR_LOG"]
+    shell:
+        """
+        bash {input.script} > {params.log} 2>&1
+        touch {output}
+        """
+rule filter_vcf:
+    input:
+        script = config["FILTER_VCF_SCRIPT"]
+    output:
+        config["FILTER_VCF_DONE"]
+    params:
+        log = config["FILTER_VCF_LOG"]
     shell:
         """
         bash {input.script} > {params.log} 2>&1

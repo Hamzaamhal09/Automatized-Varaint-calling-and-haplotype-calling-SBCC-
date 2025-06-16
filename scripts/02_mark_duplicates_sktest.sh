@@ -6,10 +6,10 @@
 ## This script marks duplicated reads in BAM alignments before using GATK tools
 
 # Path to the config file
-config_file="/home/hamzaamhal/snakemake_pipline/config/config_paths.yaml"
+config_file="/home/hamzaamhal/snakemake_pipline2/config/config_paths.yaml"
 
 # Read values from YAML config file
-output_dir_markdup=$(yq eval '.output_dir_m' $config_file)
+output_dir_markdup=$(yq eval '.output_dir_markdup' $config_file)
 metrics_dir=$(yq eval '.metrics_dir' $config_file)
 bam_dir=$(yq eval '.bam_dir' $config_file)
 variant_calling_list=$(yq eval '.variant_calling_list' $config_file)

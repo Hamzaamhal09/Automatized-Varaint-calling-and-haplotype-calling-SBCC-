@@ -1,0 +1,2 @@
+ST459_174:1 C2KPVACXX_1_18 ST459_174:1 ILUMINA SBCC056 /data/hamza/test_snakemake_dir/exome_SBCC/C2KPVACXX_1_18_1.fastq.gz /data/hamza/test_snakemake_dir/exome_SBCC/C2KPVACXX_1_18_2.fastq.gz
+ST459_174:1 C2KPVACXX_1_19 ST459_174:1 ILUMINA SBCC059 /data/hamza/test_snakemake_dir/exome_SBCC/C2KPVACXX_1_19_1.fastq.gz /data/hamza/test_snakemake_dir/exome_SBCC/C2KPVACXX_1_19_2.fastq.gz

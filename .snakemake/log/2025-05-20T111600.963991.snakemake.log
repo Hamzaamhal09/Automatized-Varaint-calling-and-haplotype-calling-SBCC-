@@ -1,0 +1,7 @@
+host: selva
+Building DAG of jobs...
+MissingInputException in rule map_reads in file /home/hamzaamhal/snakemake_pipline2/snakemakepipline.smk, line 62:
+Missing input files for rule map_reads:
+    output: /home/hamzaamhal/snakemake_pipline2/output/mapping_done.txt
+    affected files:
+        /home/hamzaamhal/snakemake_pipline/scripts/02_mapping.sh

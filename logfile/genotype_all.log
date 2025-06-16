@@ -1,0 +1,523 @@
+nohup: ignoring input
+13:02:33.326 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/contrera/soft/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+13:02:33.566 INFO  GenomicsDBImport - ------------------------------------------------------------
+13:02:33.567 INFO  GenomicsDBImport - The Genome Analysis Toolkit (GATK) v4.3.0.0
+13:02:33.567 INFO  GenomicsDBImport - For support and documentation go to https://software.broadinstitute.org/gatk/
+13:02:33.567 INFO  GenomicsDBImport - Executing as hamzaamhal@selva on Linux v6.1.0-23-amd64 amd64
+13:02:33.567 INFO  GenomicsDBImport - Java runtime: OpenJDK 64-Bit Server VM v17.0.11-internal+0-adhoc..src
+13:02:33.568 INFO  GenomicsDBImport - Start Date/Time: June 2, 2025 at 1:02:33 PM CEST
+13:02:33.568 INFO  GenomicsDBImport - ------------------------------------------------------------
+13:02:33.568 INFO  GenomicsDBImport - ------------------------------------------------------------
+13:02:33.569 INFO  GenomicsDBImport - HTSJDK Version: 3.0.1
+13:02:33.570 INFO  GenomicsDBImport - Picard Version: 2.27.5
+13:02:33.570 INFO  GenomicsDBImport - Built for Spark Version: 2.4.5
+13:02:33.570 INFO  GenomicsDBImport - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+13:02:33.570 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+13:02:33.571 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+13:02:33.571 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+13:02:33.571 INFO  GenomicsDBImport - Deflater: IntelDeflater
+13:02:33.571 INFO  GenomicsDBImport - Inflater: IntelInflater
+13:02:33.572 INFO  GenomicsDBImport - GCS max retries/reopens: 20
+13:02:33.572 INFO  GenomicsDBImport - Requester pays: disabled
+13:02:33.572 INFO  GenomicsDBImport - Initializing engine
+13:02:34.906 INFO  IntervalArgumentCollection - Processing 4225605719 bp from intervals
+13:02:34.939 INFO  GenomicsDBImport - Done initializing engine
+13:02:35.453 INFO  GenomicsDBLibLoader - GenomicsDB native library version : 1.4.3-6069e4a
+13:02:35.454 INFO  GenomicsDBImport - Shutting down engine
+[June 2, 2025 at 1:02:35 PM CEST] org.broadinstitute.hellbender.tools.genomicsdb.GenomicsDBImport done. Elapsed time: 0.04 minutes.
+Runtime.totalMemory()=335544320
+***********************************************************************
+
+A USER ERROR has occurred: Error creating GenomicsDB workspace: /data/hamza/test_snakemake_dir/gvcf_files/combined_gvcf_file already exists
+
+***********************************************************************
+org.broadinstitute.hellbender.tools.genomicsdb.GenomicsDBImport$UnableToCreateGenomicsDBWorkspace: Error creating GenomicsDB workspace: /data/hamza/test_snakemake_dir/gvcf_files/combined_gvcf_file already exists
+	at org.broadinstitute.hellbender.tools.genomicsdb.GenomicsDBImport.overwriteCreateOrCheckWorkspace(GenomicsDBImport.java:1009)
+	at org.broadinstitute.hellbender.tools.genomicsdb.GenomicsDBImport.onTraversalStart(GenomicsDBImport.java:636)
+	at org.broadinstitute.hellbender.engine.GATKTool.doWork(GATKTool.java:1093)
+	at org.broadinstitute.hellbender.cmdline.CommandLineProgram.runTool(CommandLineProgram.java:140)
+	at org.broadinstitute.hellbender.cmdline.CommandLineProgram.instanceMainPostParseArgs(CommandLineProgram.java:192)
+	at org.broadinstitute.hellbender.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:211)
+	at org.broadinstitute.hellbender.Main.runCommandLineProgram(Main.java:160)
+	at org.broadinstitute.hellbender.Main.mainEntry(Main.java:203)
+	at org.broadinstitute.hellbender.Main.main(Main.java:289)
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr1H_0.vcf already exists, skipping chr1H_0.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr1H_1.vcf already exists, skipping chr1H_1.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr2H_0.vcf already exists, skipping chr2H_0.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr2H_1.vcf already exists, skipping chr2H_1.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr3H_0.vcf already exists, skipping chr3H_0.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr3H_1.vcf already exists, skipping chr3H_1.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr4H_0.vcf already exists, skipping chr4H_0.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr4H_1.vcf already exists, skipping chr4H_1.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr5H_0.vcf already exists, skipping chr5H_0.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr5H_1.vcf already exists, skipping chr5H_1.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr6H_0.vcf already exists, skipping chr6H_0.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr6H_1.vcf already exists, skipping chr6H_1.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr7H_0.vcf already exists, skipping chr7H_0.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr7H_1.vcf already exists, skipping chr7H_1.
+File /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chrUn.vcf already exists, skipping chrUn.
+13:02:38.960 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/contrera/soft/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Mon Jun 02 13:02:39 CEST 2025] GatherVcfs --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr1H_0.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr1H_1.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr2H_0.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr2H_1.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr3H_0.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr3H_1.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr4H_0.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr4H_1.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr5H_0.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr5H_1.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr6H_0.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr6H_1.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr7H_0.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chr7H_1.vcf --INPUT /data/hamza/test_snakemake_dir/gvcf_files/gvcf_chr_file_chrUn.vcf --OUTPUT /data/hamza/test_snakemake_dir/gvcf_files/SBCC_combined.vcf --REFERENCE_SEQUENCE /data/hamza/reference/barley_v3_split_2_parts.fa --REORDER_INPUT_BY_FIRST_VARIANT false --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX true --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Mon Jun 02 13:02:39 CEST 2025] Executing as hamzaamhal@selva on Linux 6.1.0-23-amd64 amd64; OpenJDK 64-Bit Server VM 17.0.11-internal+0-adhoc..src; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.3.0.0
+INFO	2025-06-02 13:02:39	GatherVcfs	Checking inputs.
+INFO	2025-06-02 13:02:39	GatherVcfs	Checking file headers and first records to ensure compatibility.
+INFO	2025-06-02 13:02:39	GatherVcfs	Gathering by conventional means.
+INFO	2025-06-02 13:02:40	GatherVcfs	Processed        10,000 records.  Elapsed time: 00:00:00s.  Time for last 10,000:    0s.  Last read position: chr1H_0:3,305,455
+INFO	2025-06-02 13:02:40	GatherVcfs	Processed        20,000 records.  Elapsed time: 00:00:00s.  Time for last 10,000:    0s.  Last read position: chr1H_0:6,979,318
+INFO	2025-06-02 13:02:40	GatherVcfs	Processed        30,000 records.  Elapsed time: 00:00:01s.  Time for last 10,000:    0s.  Last read position: chr1H_0:11,521,823
+INFO	2025-06-02 13:02:41	GatherVcfs	Processed        40,000 records.  Elapsed time: 00:00:01s.  Time for last 10,000:    0s.  Last read position: chr1H_0:17,709,833
+INFO	2025-06-02 13:02:41	GatherVcfs	Processed        50,000 records.  Elapsed time: 00:00:01s.  Time for last 10,000:    0s.  Last read position: chr1H_0:24,300,835
+INFO	2025-06-02 13:02:41	GatherVcfs	Processed        60,000 records.  Elapsed time: 00:00:02s.  Time for last 10,000:    0s.  Last read position: chr1H_0:31,442,262
+INFO	2025-06-02 13:02:41	GatherVcfs	Processed        70,000 records.  Elapsed time: 00:00:02s.  Time for last 10,000:    0s.  Last read position: chr1H_0:39,574,590
+INFO	2025-06-02 13:02:42	GatherVcfs	Processed        80,000 records.  Elapsed time: 00:00:02s.  Time for last 10,000:    0s.  Last read position: chr1H_0:61,527,820
+INFO	2025-06-02 13:02:42	GatherVcfs	Processed        90,000 records.  Elapsed time: 00:00:02s.  Time for last 10,000:    0s.  Last read position: chr1H_0:72,785,127
+INFO	2025-06-02 13:02:42	GatherVcfs	Processed       100,000 records.  Elapsed time: 00:00:03s.  Time for last 10,000:    0s.  Last read position: chr1H_0:78,277,413
+INFO	2025-06-02 13:02:43	GatherVcfs	Processed       110,000 records.  Elapsed time: 00:00:03s.  Time for last 10,000:    0s.  Last read position: chr1H_0:89,149,989
+INFO	2025-06-02 13:02:43	GatherVcfs	Processed       120,000 records.  Elapsed time: 00:00:03s.  Time for last 10,000:    0s.  Last read position: chr1H_0:103,883,940
+INFO	2025-06-02 13:02:43	GatherVcfs	Processed       130,000 records.  Elapsed time: 00:00:04s.  Time for last 10,000:    0s.  Last read position: chr1H_0:148,513,788
+INFO	2025-06-02 13:02:43	GatherVcfs	Processed       140,000 records.  Elapsed time: 00:00:04s.  Time for last 10,000:    0s.  Last read position: chr1H_0:196,237,444
+INFO	2025-06-02 13:02:44	GatherVcfs	Processed       150,000 records.  Elapsed time: 00:00:04s.  Time for last 10,000:    0s.  Last read position: chr1H_0:241,172,457
+INFO	2025-06-02 13:02:44	GatherVcfs	Processed       160,000 records.  Elapsed time: 00:00:04s.  Time for last 10,000:    0s.  Last read position: chr1H_1:6,970,154
+INFO	2025-06-02 13:02:44	GatherVcfs	Processed       170,000 records.  Elapsed time: 00:00:05s.  Time for last 10,000:    0s.  Last read position: chr1H_1:17,734,651
+INFO	2025-06-02 13:02:44	GatherVcfs	Processed       180,000 records.  Elapsed time: 00:00:05s.  Time for last 10,000:    0s.  Last read position: chr1H_1:29,418,056
+INFO	2025-06-02 13:02:45	GatherVcfs	Processed       190,000 records.  Elapsed time: 00:00:05s.  Time for last 10,000:    0s.  Last read position: chr1H_1:37,586,573
+INFO	2025-06-02 13:02:45	GatherVcfs	Processed       200,000 records.  Elapsed time: 00:00:05s.  Time for last 10,000:    0s.  Last read position: chr1H_1:43,582,437
+INFO	2025-06-02 13:02:45	GatherVcfs	Processed       210,000 records.  Elapsed time: 00:00:06s.  Time for last 10,000:    0s.  Last read position: chr1H_1:49,691,656
+INFO	2025-06-02 13:02:45	GatherVcfs	Processed       220,000 records.  Elapsed time: 00:00:06s.  Time for last 10,000:    0s.  Last read position: chr1H_1:55,610,005
+INFO	2025-06-02 13:02:46	GatherVcfs	Processed       230,000 records.  Elapsed time: 00:00:06s.  Time for last 10,000:    0s.  Last read position: chr1H_1:62,550,305
+INFO	2025-06-02 13:02:46	GatherVcfs	Processed       240,000 records.  Elapsed time: 00:00:06s.  Time for last 10,000:    0s.  Last read position: chr1H_1:68,653,574
+INFO	2025-06-02 13:02:46	GatherVcfs	Processed       250,000 records.  Elapsed time: 00:00:07s.  Time for last 10,000:    0s.  Last read position: chr1H_1:73,148,853
+INFO	2025-06-02 13:02:46	GatherVcfs	Processed       260,000 records.  Elapsed time: 00:00:07s.  Time for last 10,000:    0s.  Last read position: chr1H_1:79,310,674
+INFO	2025-06-02 13:02:46	GatherVcfs	Processed       270,000 records.  Elapsed time: 00:00:07s.  Time for last 10,000:    0s.  Last read position: chr1H_1:83,946,919
+INFO	2025-06-02 13:02:47	GatherVcfs	Processed       280,000 records.  Elapsed time: 00:00:07s.  Time for last 10,000:    0s.  Last read position: chr1H_1:89,219,866
+INFO	2025-06-02 13:02:47	GatherVcfs	Processed       290,000 records.  Elapsed time: 00:00:07s.  Time for last 10,000:    0s.  Last read position: chr1H_1:116,802,281
+INFO	2025-06-02 13:02:47	GatherVcfs	Processed       300,000 records.  Elapsed time: 00:00:08s.  Time for last 10,000:    0s.  Last read position: chr1H_1:124,685,873
+INFO	2025-06-02 13:02:47	GatherVcfs	Processed       310,000 records.  Elapsed time: 00:00:08s.  Time for last 10,000:    0s.  Last read position: chr1H_1:131,076,672
+INFO	2025-06-02 13:02:48	GatherVcfs	Processed       320,000 records.  Elapsed time: 00:00:08s.  Time for last 10,000:    0s.  Last read position: chr1H_1:136,523,981
+INFO	2025-06-02 13:02:48	GatherVcfs	Processed       330,000 records.  Elapsed time: 00:00:08s.  Time for last 10,000:    0s.  Last read position: chr1H_1:140,641,507
+INFO	2025-06-02 13:02:48	GatherVcfs	Processed       340,000 records.  Elapsed time: 00:00:08s.  Time for last 10,000:    0s.  Last read position: chr1H_1:148,371,979
+INFO	2025-06-02 13:02:48	GatherVcfs	Processed       350,000 records.  Elapsed time: 00:00:09s.  Time for last 10,000:    0s.  Last read position: chr1H_1:158,105,556
+INFO	2025-06-02 13:02:48	GatherVcfs	Processed       360,000 records.  Elapsed time: 00:00:09s.  Time for last 10,000:    0s.  Last read position: chr1H_1:163,998,152
+INFO	2025-06-02 13:02:49	GatherVcfs	Processed       370,000 records.  Elapsed time: 00:00:09s.  Time for last 10,000:    0s.  Last read position: chr1H_1:173,122,303
+INFO	2025-06-02 13:02:49	GatherVcfs	Processed       380,000 records.  Elapsed time: 00:00:09s.  Time for last 10,000:    0s.  Last read position: chr1H_1:182,002,225
+INFO	2025-06-02 13:02:49	GatherVcfs	Processed       390,000 records.  Elapsed time: 00:00:09s.  Time for last 10,000:    0s.  Last read position: chr1H_1:189,303,270
+INFO	2025-06-02 13:02:49	GatherVcfs	Processed       400,000 records.  Elapsed time: 00:00:10s.  Time for last 10,000:    0s.  Last read position: chr1H_1:202,128,786
+INFO	2025-06-02 13:02:49	GatherVcfs	Processed       410,000 records.  Elapsed time: 00:00:10s.  Time for last 10,000:    0s.  Last read position: chr1H_1:206,992,415
+INFO	2025-06-02 13:02:50	GatherVcfs	Processed       420,000 records.  Elapsed time: 00:00:10s.  Time for last 10,000:    0s.  Last read position: chr1H_1:212,983,812
+INFO	2025-06-02 13:02:50	GatherVcfs	Processed       430,000 records.  Elapsed time: 00:00:10s.  Time for last 10,000:    0s.  Last read position: chr1H_1:217,762,133
+INFO	2025-06-02 13:02:50	GatherVcfs	Processed       440,000 records.  Elapsed time: 00:00:10s.  Time for last 10,000:    0s.  Last read position: chr1H_1:222,183,807
+INFO	2025-06-02 13:02:50	GatherVcfs	Processed       450,000 records.  Elapsed time: 00:00:11s.  Time for last 10,000:    0s.  Last read position: chr1H_1:226,827,230
+INFO	2025-06-02 13:02:50	GatherVcfs	Processed       460,000 records.  Elapsed time: 00:00:11s.  Time for last 10,000:    0s.  Last read position: chr1H_1:234,649,478
+INFO	2025-06-02 13:02:51	GatherVcfs	Processed       470,000 records.  Elapsed time: 00:00:11s.  Time for last 10,000:    0s.  Last read position: chr1H_1:240,342,773
+INFO	2025-06-02 13:02:51	GatherVcfs	Processed       480,000 records.  Elapsed time: 00:00:11s.  Time for last 10,000:    0s.  Last read position: chr1H_1:248,402,181
+INFO	2025-06-02 13:02:51	GatherVcfs	Processed       490,000 records.  Elapsed time: 00:00:11s.  Time for last 10,000:    0s.  Last read position: chr1H_1:254,185,741
+INFO	2025-06-02 13:02:51	GatherVcfs	Processed       500,000 records.  Elapsed time: 00:00:12s.  Time for last 10,000:    0s.  Last read position: chr2H_0:1,935,151
+INFO	2025-06-02 13:02:51	GatherVcfs	Processed       510,000 records.  Elapsed time: 00:00:12s.  Time for last 10,000:    0s.  Last read position: chr2H_0:5,814,115
+INFO	2025-06-02 13:02:52	GatherVcfs	Processed       520,000 records.  Elapsed time: 00:00:12s.  Time for last 10,000:    0s.  Last read position: chr2H_0:12,062,040
+INFO	2025-06-02 13:02:52	GatherVcfs	Processed       530,000 records.  Elapsed time: 00:00:12s.  Time for last 10,000:    0s.  Last read position: chr2H_0:15,667,802
+INFO	2025-06-02 13:02:52	GatherVcfs	Processed       540,000 records.  Elapsed time: 00:00:13s.  Time for last 10,000:    0s.  Last read position: chr2H_0:19,466,217
+INFO	2025-06-02 13:02:52	GatherVcfs	Processed       550,000 records.  Elapsed time: 00:00:13s.  Time for last 10,000:    0s.  Last read position: chr2H_0:25,287,539
+INFO	2025-06-02 13:02:52	GatherVcfs	Processed       560,000 records.  Elapsed time: 00:00:13s.  Time for last 10,000:    0s.  Last read position: chr2H_0:31,012,821
+INFO	2025-06-02 13:02:53	GatherVcfs	Processed       570,000 records.  Elapsed time: 00:00:13s.  Time for last 10,000:    0s.  Last read position: chr2H_0:36,326,848
+INFO	2025-06-02 13:02:53	GatherVcfs	Processed       580,000 records.  Elapsed time: 00:00:13s.  Time for last 10,000:    0s.  Last read position: chr2H_0:41,802,239
+INFO	2025-06-02 13:02:53	GatherVcfs	Processed       590,000 records.  Elapsed time: 00:00:14s.  Time for last 10,000:    0s.  Last read position: chr2H_0:46,736,291
+INFO	2025-06-02 13:02:53	GatherVcfs	Processed       600,000 records.  Elapsed time: 00:00:14s.  Time for last 10,000:    0s.  Last read position: chr2H_0:52,855,385
+INFO	2025-06-02 13:02:53	GatherVcfs	Processed       610,000 records.  Elapsed time: 00:00:14s.  Time for last 10,000:    0s.  Last read position: chr2H_0:58,231,634
+INFO	2025-06-02 13:02:54	GatherVcfs	Processed       620,000 records.  Elapsed time: 00:00:14s.  Time for last 10,000:    0s.  Last read position: chr2H_0:69,011,399
+INFO	2025-06-02 13:02:54	GatherVcfs	Processed       630,000 records.  Elapsed time: 00:00:14s.  Time for last 10,000:    0s.  Last read position: chr2H_0:75,147,921
+INFO	2025-06-02 13:02:54	GatherVcfs	Processed       640,000 records.  Elapsed time: 00:00:15s.  Time for last 10,000:    0s.  Last read position: chr2H_0:80,788,802
+INFO	2025-06-02 13:02:54	GatherVcfs	Processed       650,000 records.  Elapsed time: 00:00:15s.  Time for last 10,000:    0s.  Last read position: chr2H_0:86,837,878
+INFO	2025-06-02 13:02:54	GatherVcfs	Processed       660,000 records.  Elapsed time: 00:00:15s.  Time for last 10,000:    0s.  Last read position: chr2H_0:93,457,761
+INFO	2025-06-02 13:02:55	GatherVcfs	Processed       670,000 records.  Elapsed time: 00:00:15s.  Time for last 10,000:    0s.  Last read position: chr2H_0:99,253,830
+INFO	2025-06-02 13:02:55	GatherVcfs	Processed       680,000 records.  Elapsed time: 00:00:15s.  Time for last 10,000:    0s.  Last read position: chr2H_0:104,705,978
+INFO	2025-06-02 13:02:55	GatherVcfs	Processed       690,000 records.  Elapsed time: 00:00:16s.  Time for last 10,000:    0s.  Last read position: chr2H_0:111,507,490
+INFO	2025-06-02 13:02:55	GatherVcfs	Processed       700,000 records.  Elapsed time: 00:00:16s.  Time for last 10,000:    0s.  Last read position: chr2H_0:127,932,507
+INFO	2025-06-02 13:02:55	GatherVcfs	Processed       710,000 records.  Elapsed time: 00:00:16s.  Time for last 10,000:    0s.  Last read position: chr2H_0:145,617,065
+INFO	2025-06-02 13:02:56	GatherVcfs	Processed       720,000 records.  Elapsed time: 00:00:16s.  Time for last 10,000:    0s.  Last read position: chr2H_0:152,719,573
+INFO	2025-06-02 13:02:56	GatherVcfs	Processed       730,000 records.  Elapsed time: 00:00:16s.  Time for last 10,000:    0s.  Last read position: chr2H_0:158,631,110
+INFO	2025-06-02 13:02:56	GatherVcfs	Processed       740,000 records.  Elapsed time: 00:00:17s.  Time for last 10,000:    0s.  Last read position: chr2H_0:163,131,602
+INFO	2025-06-02 13:02:56	GatherVcfs	Processed       750,000 records.  Elapsed time: 00:00:17s.  Time for last 10,000:    0s.  Last read position: chr2H_0:168,864,170
+INFO	2025-06-02 13:02:56	GatherVcfs	Processed       760,000 records.  Elapsed time: 00:00:17s.  Time for last 10,000:    0s.  Last read position: chr2H_0:174,764,899
+INFO	2025-06-02 13:02:57	GatherVcfs	Processed       770,000 records.  Elapsed time: 00:00:17s.  Time for last 10,000:    0s.  Last read position: chr2H_0:182,452,556
+INFO	2025-06-02 13:02:57	GatherVcfs	Processed       780,000 records.  Elapsed time: 00:00:17s.  Time for last 10,000:    0s.  Last read position: chr2H_0:189,490,074
+INFO	2025-06-02 13:02:57	GatherVcfs	Processed       790,000 records.  Elapsed time: 00:00:18s.  Time for last 10,000:    0s.  Last read position: chr2H_0:197,051,538
+INFO	2025-06-02 13:02:57	GatherVcfs	Processed       800,000 records.  Elapsed time: 00:00:18s.  Time for last 10,000:    0s.  Last read position: chr2H_0:202,230,723
+INFO	2025-06-02 13:02:58	GatherVcfs	Processed       810,000 records.  Elapsed time: 00:00:18s.  Time for last 10,000:    0s.  Last read position: chr2H_0:208,231,202
+INFO	2025-06-02 13:02:58	GatherVcfs	Processed       820,000 records.  Elapsed time: 00:00:18s.  Time for last 10,000:    0s.  Last read position: chr2H_0:213,474,155
+INFO	2025-06-02 13:02:58	GatherVcfs	Processed       830,000 records.  Elapsed time: 00:00:19s.  Time for last 10,000:    0s.  Last read position: chr2H_0:219,190,686
+INFO	2025-06-02 13:02:58	GatherVcfs	Processed       840,000 records.  Elapsed time: 00:00:19s.  Time for last 10,000:    0s.  Last read position: chr2H_0:230,779,169
+INFO	2025-06-02 13:02:58	GatherVcfs	Processed       850,000 records.  Elapsed time: 00:00:19s.  Time for last 10,000:    0s.  Last read position: chr2H_0:249,498,727
+INFO	2025-06-02 13:02:59	GatherVcfs	Processed       860,000 records.  Elapsed time: 00:00:19s.  Time for last 10,000:    0s.  Last read position: chr2H_0:267,825,368
+INFO	2025-06-02 13:02:59	GatherVcfs	Processed       870,000 records.  Elapsed time: 00:00:19s.  Time for last 10,000:    0s.  Last read position: chr2H_0:285,800,177
+INFO	2025-06-02 13:02:59	GatherVcfs	Processed       880,000 records.  Elapsed time: 00:00:20s.  Time for last 10,000:    0s.  Last read position: chr2H_0:302,965,386
+INFO	2025-06-02 13:02:59	GatherVcfs	Processed       890,000 records.  Elapsed time: 00:00:20s.  Time for last 10,000:    0s.  Last read position: chr2H_0:322,113,112
+INFO	2025-06-02 13:03:00	GatherVcfs	Processed       900,000 records.  Elapsed time: 00:00:20s.  Time for last 10,000:    0s.  Last read position: chr2H_1:4,849,024
+INFO	2025-06-02 13:03:00	GatherVcfs	Processed       910,000 records.  Elapsed time: 00:00:20s.  Time for last 10,000:    0s.  Last read position: chr2H_1:18,281,191
+INFO	2025-06-02 13:03:00	GatherVcfs	Processed       920,000 records.  Elapsed time: 00:00:20s.  Time for last 10,000:    0s.  Last read position: chr2H_1:22,305,241
+INFO	2025-06-02 13:03:00	GatherVcfs	Processed       930,000 records.  Elapsed time: 00:00:21s.  Time for last 10,000:    0s.  Last read position: chr2H_1:26,538,572
+INFO	2025-06-02 13:03:00	GatherVcfs	Processed       940,000 records.  Elapsed time: 00:00:21s.  Time for last 10,000:    0s.  Last read position: chr2H_1:67,392,363
+INFO	2025-06-02 13:03:01	GatherVcfs	Processed       950,000 records.  Elapsed time: 00:00:21s.  Time for last 10,000:    0s.  Last read position: chr2H_1:102,879,166
+INFO	2025-06-02 13:03:01	GatherVcfs	Processed       960,000 records.  Elapsed time: 00:00:21s.  Time for last 10,000:    0s.  Last read position: chr2H_1:107,905,984
+INFO	2025-06-02 13:03:01	GatherVcfs	Processed       970,000 records.  Elapsed time: 00:00:21s.  Time for last 10,000:    0s.  Last read position: chr2H_1:113,164,225
+INFO	2025-06-02 13:03:01	GatherVcfs	Processed       980,000 records.  Elapsed time: 00:00:22s.  Time for last 10,000:    0s.  Last read position: chr2H_1:118,733,083
+INFO	2025-06-02 13:03:01	GatherVcfs	Processed       990,000 records.  Elapsed time: 00:00:22s.  Time for last 10,000:    0s.  Last read position: chr2H_1:123,662,320
+INFO	2025-06-02 13:03:02	GatherVcfs	Processed     1,000,000 records.  Elapsed time: 00:00:22s.  Time for last 10,000:    0s.  Last read position: chr2H_1:127,732,876
+INFO	2025-06-02 13:03:02	GatherVcfs	Processed     1,010,000 records.  Elapsed time: 00:00:22s.  Time for last 10,000:    0s.  Last read position: chr2H_1:132,244,349
+INFO	2025-06-02 13:03:02	GatherVcfs	Processed     1,020,000 records.  Elapsed time: 00:00:22s.  Time for last 10,000:    0s.  Last read position: chr2H_1:136,749,575
+INFO	2025-06-02 13:03:02	GatherVcfs	Processed     1,030,000 records.  Elapsed time: 00:00:23s.  Time for last 10,000:    0s.  Last read position: chr2H_1:141,485,094
+INFO	2025-06-02 13:03:02	GatherVcfs	Processed     1,040,000 records.  Elapsed time: 00:00:23s.  Time for last 10,000:    0s.  Last read position: chr2H_1:146,001,262
+INFO	2025-06-02 13:03:02	GatherVcfs	Processed     1,050,000 records.  Elapsed time: 00:00:23s.  Time for last 10,000:    0s.  Last read position: chr2H_1:151,364,283
+INFO	2025-06-02 13:03:03	GatherVcfs	Processed     1,060,000 records.  Elapsed time: 00:00:23s.  Time for last 10,000:    0s.  Last read position: chr2H_1:157,485,349
+INFO	2025-06-02 13:03:03	GatherVcfs	Processed     1,070,000 records.  Elapsed time: 00:00:23s.  Time for last 10,000:    0s.  Last read position: chr2H_1:165,051,510
+INFO	2025-06-02 13:03:03	GatherVcfs	Processed     1,080,000 records.  Elapsed time: 00:00:24s.  Time for last 10,000:    0s.  Last read position: chr2H_1:173,451,068
+INFO	2025-06-02 13:03:03	GatherVcfs	Processed     1,090,000 records.  Elapsed time: 00:00:24s.  Time for last 10,000:    0s.  Last read position: chr2H_1:179,855,403
+INFO	2025-06-02 13:03:03	GatherVcfs	Processed     1,100,000 records.  Elapsed time: 00:00:24s.  Time for last 10,000:    0s.  Last read position: chr2H_1:203,313,168
+INFO	2025-06-02 13:03:04	GatherVcfs	Processed     1,110,000 records.  Elapsed time: 00:00:24s.  Time for last 10,000:    0s.  Last read position: chr2H_1:212,340,313
+INFO	2025-06-02 13:03:04	GatherVcfs	Processed     1,120,000 records.  Elapsed time: 00:00:24s.  Time for last 10,000:    0s.  Last read position: chr2H_1:217,311,342
+INFO	2025-06-02 13:03:04	GatherVcfs	Processed     1,130,000 records.  Elapsed time: 00:00:25s.  Time for last 10,000:    0s.  Last read position: chr2H_1:223,639,280
+INFO	2025-06-02 13:03:04	GatherVcfs	Processed     1,140,000 records.  Elapsed time: 00:00:25s.  Time for last 10,000:    0s.  Last read position: chr2H_1:229,214,407
+INFO	2025-06-02 13:03:04	GatherVcfs	Processed     1,150,000 records.  Elapsed time: 00:00:25s.  Time for last 10,000:    0s.  Last read position: chr2H_1:243,402,450
+INFO	2025-06-02 13:03:05	GatherVcfs	Processed     1,160,000 records.  Elapsed time: 00:00:25s.  Time for last 10,000:    0s.  Last read position: chr2H_1:253,502,496
+INFO	2025-06-02 13:03:05	GatherVcfs	Processed     1,170,000 records.  Elapsed time: 00:00:25s.  Time for last 10,000:    0s.  Last read position: chr2H_1:258,216,663
+INFO	2025-06-02 13:03:05	GatherVcfs	Processed     1,180,000 records.  Elapsed time: 00:00:26s.  Time for last 10,000:    0s.  Last read position: chr2H_1:263,406,420
+INFO	2025-06-02 13:03:05	GatherVcfs	Processed     1,190,000 records.  Elapsed time: 00:00:26s.  Time for last 10,000:    0s.  Last read position: chr2H_1:271,458,397
+INFO	2025-06-02 13:03:05	GatherVcfs	Processed     1,200,000 records.  Elapsed time: 00:00:26s.  Time for last 10,000:    0s.  Last read position: chr2H_1:278,382,143
+INFO	2025-06-02 13:03:06	GatherVcfs	Processed     1,210,000 records.  Elapsed time: 00:00:26s.  Time for last 10,000:    0s.  Last read position: chr2H_1:283,407,176
+INFO	2025-06-02 13:03:06	GatherVcfs	Processed     1,220,000 records.  Elapsed time: 00:00:26s.  Time for last 10,000:    0s.  Last read position: chr2H_1:290,594,304
+INFO	2025-06-02 13:03:06	GatherVcfs	Processed     1,230,000 records.  Elapsed time: 00:00:27s.  Time for last 10,000:    0s.  Last read position: chr2H_1:294,950,743
+INFO	2025-06-02 13:03:06	GatherVcfs	Processed     1,240,000 records.  Elapsed time: 00:00:27s.  Time for last 10,000:    0s.  Last read position: chr2H_1:299,934,910
+INFO	2025-06-02 13:03:06	GatherVcfs	Processed     1,250,000 records.  Elapsed time: 00:00:27s.  Time for last 10,000:    0s.  Last read position: chr2H_1:304,922,144
+INFO	2025-06-02 13:03:07	GatherVcfs	Processed     1,260,000 records.  Elapsed time: 00:00:27s.  Time for last 10,000:    0s.  Last read position: chr2H_1:312,871,514
+INFO	2025-06-02 13:03:07	GatherVcfs	Processed     1,270,000 records.  Elapsed time: 00:00:27s.  Time for last 10,000:    0s.  Last read position: chr2H_1:319,205,551
+INFO	2025-06-02 13:03:07	GatherVcfs	Processed     1,280,000 records.  Elapsed time: 00:00:28s.  Time for last 10,000:    0s.  Last read position: chr2H_1:323,740,880
+INFO	2025-06-02 13:03:07	GatherVcfs	Processed     1,290,000 records.  Elapsed time: 00:00:28s.  Time for last 10,000:    0s.  Last read position: chr2H_1:328,719,500
+INFO	2025-06-02 13:03:08	GatherVcfs	Processed     1,300,000 records.  Elapsed time: 00:00:28s.  Time for last 10,000:    0s.  Last read position: chr3H_0:3,319,485
+INFO	2025-06-02 13:03:08	GatherVcfs	Processed     1,310,000 records.  Elapsed time: 00:00:28s.  Time for last 10,000:    0s.  Last read position: chr3H_0:7,205,160
+INFO	2025-06-02 13:03:08	GatherVcfs	Processed     1,320,000 records.  Elapsed time: 00:00:28s.  Time for last 10,000:    0s.  Last read position: chr3H_0:12,931,378
+INFO	2025-06-02 13:03:08	GatherVcfs	Processed     1,330,000 records.  Elapsed time: 00:00:29s.  Time for last 10,000:    0s.  Last read position: chr3H_0:17,389,072
+INFO	2025-06-02 13:03:08	GatherVcfs	Processed     1,340,000 records.  Elapsed time: 00:00:29s.  Time for last 10,000:    0s.  Last read position: chr3H_0:21,627,008
+INFO	2025-06-02 13:03:09	GatherVcfs	Processed     1,350,000 records.  Elapsed time: 00:00:29s.  Time for last 10,000:    0s.  Last read position: chr3H_0:26,235,756
+INFO	2025-06-02 13:03:09	GatherVcfs	Processed     1,360,000 records.  Elapsed time: 00:00:29s.  Time for last 10,000:    0s.  Last read position: chr3H_0:33,493,953
+INFO	2025-06-02 13:03:09	GatherVcfs	Processed     1,370,000 records.  Elapsed time: 00:00:29s.  Time for last 10,000:    0s.  Last read position: chr3H_0:39,446,276
+INFO	2025-06-02 13:03:09	GatherVcfs	Processed     1,380,000 records.  Elapsed time: 00:00:30s.  Time for last 10,000:    0s.  Last read position: chr3H_0:48,772,587
+INFO	2025-06-02 13:03:09	GatherVcfs	Processed     1,390,000 records.  Elapsed time: 00:00:30s.  Time for last 10,000:    0s.  Last read position: chr3H_0:54,128,275
+INFO	2025-06-02 13:03:10	GatherVcfs	Processed     1,400,000 records.  Elapsed time: 00:00:30s.  Time for last 10,000:    0s.  Last read position: chr3H_0:60,385,968
+INFO	2025-06-02 13:03:10	GatherVcfs	Processed     1,410,000 records.  Elapsed time: 00:00:30s.  Time for last 10,000:    0s.  Last read position: chr3H_0:66,212,314
+INFO	2025-06-02 13:03:10	GatherVcfs	Processed     1,420,000 records.  Elapsed time: 00:00:31s.  Time for last 10,000:    0s.  Last read position: chr3H_0:80,432,933
+INFO	2025-06-02 13:03:10	GatherVcfs	Processed     1,430,000 records.  Elapsed time: 00:00:31s.  Time for last 10,000:    0s.  Last read position: chr3H_0:99,027,937
+INFO	2025-06-02 13:03:10	GatherVcfs	Processed     1,440,000 records.  Elapsed time: 00:00:31s.  Time for last 10,000:    0s.  Last read position: chr3H_0:109,421,961
+INFO	2025-06-02 13:03:11	GatherVcfs	Processed     1,450,000 records.  Elapsed time: 00:00:31s.  Time for last 10,000:    0s.  Last read position: chr3H_0:133,208,631
+INFO	2025-06-02 13:03:11	GatherVcfs	Processed     1,460,000 records.  Elapsed time: 00:00:31s.  Time for last 10,000:    0s.  Last read position: chr3H_0:145,624,190
+INFO	2025-06-02 13:03:11	GatherVcfs	Processed     1,470,000 records.  Elapsed time: 00:00:32s.  Time for last 10,000:    0s.  Last read position: chr3H_0:151,538,543
+INFO	2025-06-02 13:03:11	GatherVcfs	Processed     1,480,000 records.  Elapsed time: 00:00:32s.  Time for last 10,000:    0s.  Last read position: chr3H_0:158,377,696
+INFO	2025-06-02 13:03:12	GatherVcfs	Processed     1,490,000 records.  Elapsed time: 00:00:32s.  Time for last 10,000:    0s.  Last read position: chr3H_0:166,632,049
+INFO	2025-06-02 13:03:12	GatherVcfs	Processed     1,500,000 records.  Elapsed time: 00:00:32s.  Time for last 10,000:    0s.  Last read position: chr3H_0:176,017,084
+INFO	2025-06-02 13:03:12	GatherVcfs	Processed     1,510,000 records.  Elapsed time: 00:00:32s.  Time for last 10,000:    0s.  Last read position: chr3H_0:185,508,707
+INFO	2025-06-02 13:03:12	GatherVcfs	Processed     1,520,000 records.  Elapsed time: 00:00:33s.  Time for last 10,000:    0s.  Last read position: chr3H_0:195,022,191
+INFO	2025-06-02 13:03:12	GatherVcfs	Processed     1,530,000 records.  Elapsed time: 00:00:33s.  Time for last 10,000:    0s.  Last read position: chr3H_0:202,544,666
+INFO	2025-06-02 13:03:13	GatherVcfs	Processed     1,540,000 records.  Elapsed time: 00:00:33s.  Time for last 10,000:    0s.  Last read position: chr3H_0:207,493,841
+INFO	2025-06-02 13:03:13	GatherVcfs	Processed     1,550,000 records.  Elapsed time: 00:00:33s.  Time for last 10,000:    0s.  Last read position: chr3H_0:212,709,172
+INFO	2025-06-02 13:03:13	GatherVcfs	Processed     1,560,000 records.  Elapsed time: 00:00:33s.  Time for last 10,000:    0s.  Last read position: chr3H_0:217,673,415
+INFO	2025-06-02 13:03:13	GatherVcfs	Processed     1,570,000 records.  Elapsed time: 00:00:34s.  Time for last 10,000:    0s.  Last read position: chr3H_0:222,446,329
+INFO	2025-06-02 13:03:13	GatherVcfs	Processed     1,580,000 records.  Elapsed time: 00:00:34s.  Time for last 10,000:    0s.  Last read position: chr3H_0:226,885,189
+INFO	2025-06-02 13:03:14	GatherVcfs	Processed     1,590,000 records.  Elapsed time: 00:00:34s.  Time for last 10,000:    0s.  Last read position: chr3H_0:231,813,784
+INFO	2025-06-02 13:03:14	GatherVcfs	Processed     1,600,000 records.  Elapsed time: 00:00:34s.  Time for last 10,000:    0s.  Last read position: chr3H_0:239,105,030
+INFO	2025-06-02 13:03:14	GatherVcfs	Processed     1,610,000 records.  Elapsed time: 00:00:35s.  Time for last 10,000:    0s.  Last read position: chr3H_0:244,292,444
+INFO	2025-06-02 13:03:14	GatherVcfs	Processed     1,620,000 records.  Elapsed time: 00:00:35s.  Time for last 10,000:    0s.  Last read position: chr3H_0:249,251,679
+INFO	2025-06-02 13:03:14	GatherVcfs	Processed     1,630,000 records.  Elapsed time: 00:00:35s.  Time for last 10,000:    0s.  Last read position: chr3H_0:254,746,800
+INFO	2025-06-02 13:03:15	GatherVcfs	Processed     1,640,000 records.  Elapsed time: 00:00:35s.  Time for last 10,000:    0s.  Last read position: chr3H_0:261,566,875
+INFO	2025-06-02 13:03:15	GatherVcfs	Processed     1,650,000 records.  Elapsed time: 00:00:35s.  Time for last 10,000:    0s.  Last read position: chr3H_0:267,498,008
+INFO	2025-06-02 13:03:15	GatherVcfs	Processed     1,660,000 records.  Elapsed time: 00:00:36s.  Time for last 10,000:    0s.  Last read position: chr3H_0:274,263,495
+INFO	2025-06-02 13:03:15	GatherVcfs	Processed     1,670,000 records.  Elapsed time: 00:00:36s.  Time for last 10,000:    0s.  Last read position: chr3H_0:280,977,742
+INFO	2025-06-02 13:03:15	GatherVcfs	Processed     1,680,000 records.  Elapsed time: 00:00:36s.  Time for last 10,000:    0s.  Last read position: chr3H_0:287,017,253
+INFO	2025-06-02 13:03:16	GatherVcfs	Processed     1,690,000 records.  Elapsed time: 00:00:36s.  Time for last 10,000:    0s.  Last read position: chr3H_0:294,423,412
+INFO	2025-06-02 13:03:16	GatherVcfs	Processed     1,700,000 records.  Elapsed time: 00:00:36s.  Time for last 10,000:    0s.  Last read position: chr3H_0:300,495,215
+INFO	2025-06-02 13:03:16	GatherVcfs	Processed     1,710,000 records.  Elapsed time: 00:00:37s.  Time for last 10,000:    0s.  Last read position: chr3H_0:306,602,070
+INFO	2025-06-02 13:03:16	GatherVcfs	Processed     1,720,000 records.  Elapsed time: 00:00:37s.  Time for last 10,000:    0s.  Last read position: chr3H_1:270,641
+INFO	2025-06-02 13:03:16	GatherVcfs	Processed     1,730,000 records.  Elapsed time: 00:00:37s.  Time for last 10,000:    0s.  Last read position: chr3H_1:6,319,235
+INFO	2025-06-02 13:03:17	GatherVcfs	Processed     1,740,000 records.  Elapsed time: 00:00:37s.  Time for last 10,000:    0s.  Last read position: chr3H_1:13,188,156
+INFO	2025-06-02 13:03:17	GatherVcfs	Processed     1,750,000 records.  Elapsed time: 00:00:37s.  Time for last 10,000:    0s.  Last read position: chr3H_1:23,943,791
+INFO	2025-06-02 13:03:17	GatherVcfs	Processed     1,760,000 records.  Elapsed time: 00:00:38s.  Time for last 10,000:    0s.  Last read position: chr3H_1:33,311,144
+INFO	2025-06-02 13:03:17	GatherVcfs	Processed     1,770,000 records.  Elapsed time: 00:00:38s.  Time for last 10,000:    0s.  Last read position: chr3H_1:40,192,482
+INFO	2025-06-02 13:03:18	GatherVcfs	Processed     1,780,000 records.  Elapsed time: 00:00:38s.  Time for last 10,000:    0s.  Last read position: chr3H_1:47,892,973
+INFO	2025-06-02 13:03:18	GatherVcfs	Processed     1,790,000 records.  Elapsed time: 00:00:38s.  Time for last 10,000:    0s.  Last read position: chr3H_1:59,445,888
+INFO	2025-06-02 13:03:18	GatherVcfs	Processed     1,800,000 records.  Elapsed time: 00:00:39s.  Time for last 10,000:    0s.  Last read position: chr3H_1:68,403,823
+INFO	2025-06-02 13:03:18	GatherVcfs	Processed     1,810,000 records.  Elapsed time: 00:00:39s.  Time for last 10,000:    0s.  Last read position: chr3H_1:74,045,151
+INFO	2025-06-02 13:03:18	GatherVcfs	Processed     1,820,000 records.  Elapsed time: 00:00:39s.  Time for last 10,000:    0s.  Last read position: chr3H_1:79,775,495
+INFO	2025-06-02 13:03:19	GatherVcfs	Processed     1,830,000 records.  Elapsed time: 00:00:39s.  Time for last 10,000:    0s.  Last read position: chr3H_1:84,765,168
+INFO	2025-06-02 13:03:19	GatherVcfs	Processed     1,840,000 records.  Elapsed time: 00:00:39s.  Time for last 10,000:    0s.  Last read position: chr3H_1:89,489,653
+INFO	2025-06-02 13:03:19	GatherVcfs	Processed     1,850,000 records.  Elapsed time: 00:00:40s.  Time for last 10,000:    0s.  Last read position: chr3H_1:94,242,811
+INFO	2025-06-02 13:03:19	GatherVcfs	Processed     1,860,000 records.  Elapsed time: 00:00:40s.  Time for last 10,000:    0s.  Last read position: chr3H_1:103,524,193
+INFO	2025-06-02 13:03:19	GatherVcfs	Processed     1,870,000 records.  Elapsed time: 00:00:40s.  Time for last 10,000:    0s.  Last read position: chr3H_1:110,781,516
+INFO	2025-06-02 13:03:20	GatherVcfs	Processed     1,880,000 records.  Elapsed time: 00:00:40s.  Time for last 10,000:    0s.  Last read position: chr3H_1:119,874,630
+INFO	2025-06-02 13:03:20	GatherVcfs	Processed     1,890,000 records.  Elapsed time: 00:00:40s.  Time for last 10,000:    0s.  Last read position: chr3H_1:125,087,321
+INFO	2025-06-02 13:03:20	GatherVcfs	Processed     1,900,000 records.  Elapsed time: 00:00:41s.  Time for last 10,000:    0s.  Last read position: chr3H_1:129,780,943
+INFO	2025-06-02 13:03:20	GatherVcfs	Processed     1,910,000 records.  Elapsed time: 00:00:41s.  Time for last 10,000:    0s.  Last read position: chr3H_1:134,461,073
+INFO	2025-06-02 13:03:20	GatherVcfs	Processed     1,920,000 records.  Elapsed time: 00:00:41s.  Time for last 10,000:    0s.  Last read position: chr3H_1:138,957,225
+INFO	2025-06-02 13:03:21	GatherVcfs	Processed     1,930,000 records.  Elapsed time: 00:00:41s.  Time for last 10,000:    0s.  Last read position: chr3H_1:147,374,067
+INFO	2025-06-02 13:03:21	GatherVcfs	Processed     1,940,000 records.  Elapsed time: 00:00:41s.  Time for last 10,000:    0s.  Last read position: chr3H_1:153,446,355
+INFO	2025-06-02 13:03:21	GatherVcfs	Processed     1,950,000 records.  Elapsed time: 00:00:42s.  Time for last 10,000:    0s.  Last read position: chr3H_1:159,474,353
+INFO	2025-06-02 13:03:21	GatherVcfs	Processed     1,960,000 records.  Elapsed time: 00:00:42s.  Time for last 10,000:    0s.  Last read position: chr3H_1:164,975,088
+INFO	2025-06-02 13:03:21	GatherVcfs	Processed     1,970,000 records.  Elapsed time: 00:00:42s.  Time for last 10,000:    0s.  Last read position: chr3H_1:169,839,425
+INFO	2025-06-02 13:03:22	GatherVcfs	Processed     1,980,000 records.  Elapsed time: 00:00:42s.  Time for last 10,000:    0s.  Last read position: chr3H_1:173,949,944
+INFO	2025-06-02 13:03:22	GatherVcfs	Processed     1,990,000 records.  Elapsed time: 00:00:42s.  Time for last 10,000:    0s.  Last read position: chr3H_1:178,826,175
+INFO	2025-06-02 13:03:22	GatherVcfs	Processed     2,000,000 records.  Elapsed time: 00:00:43s.  Time for last 10,000:    0s.  Last read position: chr3H_1:184,113,559
+INFO	2025-06-02 13:03:22	GatherVcfs	Processed     2,010,000 records.  Elapsed time: 00:00:43s.  Time for last 10,000:    0s.  Last read position: chr3H_1:192,106,649
+INFO	2025-06-02 13:03:22	GatherVcfs	Processed     2,020,000 records.  Elapsed time: 00:00:43s.  Time for last 10,000:    0s.  Last read position: chr3H_1:197,821,991
+INFO	2025-06-02 13:03:23	GatherVcfs	Processed     2,030,000 records.  Elapsed time: 00:00:43s.  Time for last 10,000:    0s.  Last read position: chr3H_1:202,458,585
+INFO	2025-06-02 13:03:23	GatherVcfs	Processed     2,040,000 records.  Elapsed time: 00:00:43s.  Time for last 10,000:    0s.  Last read position: chr3H_1:207,552,659
+INFO	2025-06-02 13:03:23	GatherVcfs	Processed     2,050,000 records.  Elapsed time: 00:00:43s.  Time for last 10,000:    0s.  Last read position: chr3H_1:211,686,664
+INFO	2025-06-02 13:03:23	GatherVcfs	Processed     2,060,000 records.  Elapsed time: 00:00:44s.  Time for last 10,000:    0s.  Last read position: chr3H_1:216,894,326
+INFO	2025-06-02 13:03:23	GatherVcfs	Processed     2,070,000 records.  Elapsed time: 00:00:44s.  Time for last 10,000:    0s.  Last read position: chr3H_1:222,671,223
+INFO	2025-06-02 13:03:24	GatherVcfs	Processed     2,080,000 records.  Elapsed time: 00:00:44s.  Time for last 10,000:    0s.  Last read position: chr3H_1:226,968,230
+INFO	2025-06-02 13:03:24	GatherVcfs	Processed     2,090,000 records.  Elapsed time: 00:00:44s.  Time for last 10,000:    0s.  Last read position: chr3H_1:232,231,580
+INFO	2025-06-02 13:03:24	GatherVcfs	Processed     2,100,000 records.  Elapsed time: 00:00:44s.  Time for last 10,000:    0s.  Last read position: chr3H_1:237,540,052
+INFO	2025-06-02 13:03:24	GatherVcfs	Processed     2,110,000 records.  Elapsed time: 00:00:45s.  Time for last 10,000:    0s.  Last read position: chr3H_1:243,319,122
+INFO	2025-06-02 13:03:24	GatherVcfs	Processed     2,120,000 records.  Elapsed time: 00:00:45s.  Time for last 10,000:    0s.  Last read position: chr3H_1:248,178,863
+INFO	2025-06-02 13:03:25	GatherVcfs	Processed     2,130,000 records.  Elapsed time: 00:00:45s.  Time for last 10,000:    0s.  Last read position: chr3H_1:254,937,831
+INFO	2025-06-02 13:03:25	GatherVcfs	Processed     2,140,000 records.  Elapsed time: 00:00:45s.  Time for last 10,000:    0s.  Last read position: chr3H_1:261,303,596
+INFO	2025-06-02 13:03:25	GatherVcfs	Processed     2,150,000 records.  Elapsed time: 00:00:45s.  Time for last 10,000:    0s.  Last read position: chr3H_1:269,512,525
+INFO	2025-06-02 13:03:25	GatherVcfs	Processed     2,160,000 records.  Elapsed time: 00:00:46s.  Time for last 10,000:    0s.  Last read position: chr3H_1:273,807,588
+INFO	2025-06-02 13:03:25	GatherVcfs	Processed     2,170,000 records.  Elapsed time: 00:00:46s.  Time for last 10,000:    0s.  Last read position: chr3H_1:277,589,135
+INFO	2025-06-02 13:03:26	GatherVcfs	Processed     2,180,000 records.  Elapsed time: 00:00:46s.  Time for last 10,000:    0s.  Last read position: chr3H_1:283,066,291
+INFO	2025-06-02 13:03:26	GatherVcfs	Processed     2,190,000 records.  Elapsed time: 00:00:46s.  Time for last 10,000:    0s.  Last read position: chr3H_1:287,277,490
+INFO	2025-06-02 13:03:26	GatherVcfs	Processed     2,200,000 records.  Elapsed time: 00:00:47s.  Time for last 10,000:    0s.  Last read position: chr3H_1:291,504,027
+INFO	2025-06-02 13:03:26	GatherVcfs	Processed     2,210,000 records.  Elapsed time: 00:00:47s.  Time for last 10,000:    0s.  Last read position: chr3H_1:297,404,051
+INFO	2025-06-02 13:03:26	GatherVcfs	Processed     2,220,000 records.  Elapsed time: 00:00:47s.  Time for last 10,000:    0s.  Last read position: chr3H_1:305,233,405
+INFO	2025-06-02 13:03:27	GatherVcfs	Processed     2,230,000 records.  Elapsed time: 00:00:47s.  Time for last 10,000:    0s.  Last read position: chr4H_0:2,589,385
+INFO	2025-06-02 13:03:27	GatherVcfs	Processed     2,240,000 records.  Elapsed time: 00:00:47s.  Time for last 10,000:    0s.  Last read position: chr4H_0:7,782,608
+INFO	2025-06-02 13:03:27	GatherVcfs	Processed     2,250,000 records.  Elapsed time: 00:00:48s.  Time for last 10,000:    0s.  Last read position: chr4H_0:13,349,345
+INFO	2025-06-02 13:03:27	GatherVcfs	Processed     2,260,000 records.  Elapsed time: 00:00:48s.  Time for last 10,000:    0s.  Last read position: chr4H_0:21,146,375
+INFO	2025-06-02 13:03:27	GatherVcfs	Processed     2,270,000 records.  Elapsed time: 00:00:48s.  Time for last 10,000:    0s.  Last read position: chr4H_0:29,477,578
+INFO	2025-06-02 13:03:28	GatherVcfs	Processed     2,280,000 records.  Elapsed time: 00:00:48s.  Time for last 10,000:    0s.  Last read position: chr4H_0:34,739,045
+INFO	2025-06-02 13:03:28	GatherVcfs	Processed     2,290,000 records.  Elapsed time: 00:00:48s.  Time for last 10,000:    0s.  Last read position: chr4H_0:40,447,313
+INFO	2025-06-02 13:03:28	GatherVcfs	Processed     2,300,000 records.  Elapsed time: 00:00:49s.  Time for last 10,000:    0s.  Last read position: chr4H_0:49,507,502
+INFO	2025-06-02 13:03:28	GatherVcfs	Processed     2,310,000 records.  Elapsed time: 00:00:49s.  Time for last 10,000:    0s.  Last read position: chr4H_0:57,205,906
+INFO	2025-06-02 13:03:28	GatherVcfs	Processed     2,320,000 records.  Elapsed time: 00:00:49s.  Time for last 10,000:    0s.  Last read position: chr4H_0:70,267,982
+INFO	2025-06-02 13:03:29	GatherVcfs	Processed     2,330,000 records.  Elapsed time: 00:00:49s.  Time for last 10,000:    0s.  Last read position: chr4H_0:76,225,833
+INFO	2025-06-02 13:03:29	GatherVcfs	Processed     2,340,000 records.  Elapsed time: 00:00:49s.  Time for last 10,000:    0s.  Last read position: chr4H_0:87,159,929
+INFO	2025-06-02 13:03:29	GatherVcfs	Processed     2,350,000 records.  Elapsed time: 00:00:50s.  Time for last 10,000:    0s.  Last read position: chr4H_0:96,438,531
+INFO	2025-06-02 13:03:29	GatherVcfs	Processed     2,360,000 records.  Elapsed time: 00:00:50s.  Time for last 10,000:    0s.  Last read position: chr4H_0:102,974,017
+INFO	2025-06-02 13:03:29	GatherVcfs	Processed     2,370,000 records.  Elapsed time: 00:00:50s.  Time for last 10,000:    0s.  Last read position: chr4H_0:112,743,448
+INFO	2025-06-02 13:03:30	GatherVcfs	Processed     2,380,000 records.  Elapsed time: 00:00:50s.  Time for last 10,000:    0s.  Last read position: chr4H_0:142,599,115
+INFO	2025-06-02 13:03:30	GatherVcfs	Processed     2,390,000 records.  Elapsed time: 00:00:50s.  Time for last 10,000:    0s.  Last read position: chr4H_0:164,922,020
+INFO	2025-06-02 13:03:30	GatherVcfs	Processed     2,400,000 records.  Elapsed time: 00:00:51s.  Time for last 10,000:    0s.  Last read position: chr4H_0:194,232,295
+INFO	2025-06-02 13:03:30	GatherVcfs	Processed     2,410,000 records.  Elapsed time: 00:00:51s.  Time for last 10,000:    0s.  Last read position: chr4H_0:224,459,614
+INFO	2025-06-02 13:03:30	GatherVcfs	Processed     2,420,000 records.  Elapsed time: 00:00:51s.  Time for last 10,000:    0s.  Last read position: chr4H_0:253,636,475
+INFO	2025-06-02 13:03:31	GatherVcfs	Processed     2,430,000 records.  Elapsed time: 00:00:51s.  Time for last 10,000:    0s.  Last read position: chr4H_0:282,353,339
+INFO	2025-06-02 13:03:31	GatherVcfs	Processed     2,440,000 records.  Elapsed time: 00:00:51s.  Time for last 10,000:    0s.  Last read position: chr4H_1:4,942,605
+INFO	2025-06-02 13:03:31	GatherVcfs	Processed     2,450,000 records.  Elapsed time: 00:00:52s.  Time for last 10,000:    0s.  Last read position: chr4H_1:34,596,331
+INFO	2025-06-02 13:03:31	GatherVcfs	Processed     2,460,000 records.  Elapsed time: 00:00:52s.  Time for last 10,000:    0s.  Last read position: chr4H_1:64,080,055
+INFO	2025-06-02 13:03:31	GatherVcfs	Processed     2,470,000 records.  Elapsed time: 00:00:52s.  Time for last 10,000:    0s.  Last read position: chr4H_1:88,331,137
+INFO	2025-06-02 13:03:32	GatherVcfs	Processed     2,480,000 records.  Elapsed time: 00:00:52s.  Time for last 10,000:    0s.  Last read position: chr4H_1:101,863,642
+INFO	2025-06-02 13:03:32	GatherVcfs	Processed     2,490,000 records.  Elapsed time: 00:00:52s.  Time for last 10,000:    0s.  Last read position: chr4H_1:107,462,157
+INFO	2025-06-02 13:03:32	GatherVcfs	Processed     2,500,000 records.  Elapsed time: 00:00:53s.  Time for last 10,000:    0s.  Last read position: chr4H_1:111,576,039
+INFO	2025-06-02 13:03:32	GatherVcfs	Processed     2,510,000 records.  Elapsed time: 00:00:53s.  Time for last 10,000:    0s.  Last read position: chr4H_1:115,852,488
+INFO	2025-06-02 13:03:32	GatherVcfs	Processed     2,520,000 records.  Elapsed time: 00:00:53s.  Time for last 10,000:    0s.  Last read position: chr4H_1:121,559,244
+INFO	2025-06-02 13:03:33	GatherVcfs	Processed     2,530,000 records.  Elapsed time: 00:00:53s.  Time for last 10,000:    0s.  Last read position: chr4H_1:125,971,064
+INFO	2025-06-02 13:03:33	GatherVcfs	Processed     2,540,000 records.  Elapsed time: 00:00:53s.  Time for last 10,000:    0s.  Last read position: chr4H_1:131,429,528
+INFO	2025-06-02 13:03:33	GatherVcfs	Processed     2,550,000 records.  Elapsed time: 00:00:54s.  Time for last 10,000:    0s.  Last read position: chr4H_1:136,128,290
+INFO	2025-06-02 13:03:33	GatherVcfs	Processed     2,560,000 records.  Elapsed time: 00:00:54s.  Time for last 10,000:    0s.  Last read position: chr4H_1:140,354,095
+INFO	2025-06-02 13:03:33	GatherVcfs	Processed     2,570,000 records.  Elapsed time: 00:00:54s.  Time for last 10,000:    0s.  Last read position: chr4H_1:146,666,715
+INFO	2025-06-02 13:03:34	GatherVcfs	Processed     2,580,000 records.  Elapsed time: 00:00:54s.  Time for last 10,000:    0s.  Last read position: chr4H_1:155,577,396
+INFO	2025-06-02 13:03:34	GatherVcfs	Processed     2,590,000 records.  Elapsed time: 00:00:54s.  Time for last 10,000:    0s.  Last read position: chr4H_1:160,757,201
+INFO	2025-06-02 13:03:34	GatherVcfs	Processed     2,600,000 records.  Elapsed time: 00:00:55s.  Time for last 10,000:    0s.  Last read position: chr4H_1:165,768,602
+INFO	2025-06-02 13:03:34	GatherVcfs	Processed     2,610,000 records.  Elapsed time: 00:00:55s.  Time for last 10,000:    0s.  Last read position: chr4H_1:170,701,516
+INFO	2025-06-02 13:03:34	GatherVcfs	Processed     2,620,000 records.  Elapsed time: 00:00:55s.  Time for last 10,000:    0s.  Last read position: chr4H_1:175,677,387
+INFO	2025-06-02 13:03:35	GatherVcfs	Processed     2,630,000 records.  Elapsed time: 00:00:55s.  Time for last 10,000:    0s.  Last read position: chr4H_1:181,841,623
+INFO	2025-06-02 13:03:35	GatherVcfs	Processed     2,640,000 records.  Elapsed time: 00:00:55s.  Time for last 10,000:    0s.  Last read position: chr4H_1:189,546,636
+INFO	2025-06-02 13:03:35	GatherVcfs	Processed     2,650,000 records.  Elapsed time: 00:00:56s.  Time for last 10,000:    0s.  Last read position: chr4H_1:218,552,992
+INFO	2025-06-02 13:03:35	GatherVcfs	Processed     2,660,000 records.  Elapsed time: 00:00:56s.  Time for last 10,000:    0s.  Last read position: chr4H_1:226,325,781
+INFO	2025-06-02 13:03:35	GatherVcfs	Processed     2,670,000 records.  Elapsed time: 00:00:56s.  Time for last 10,000:    0s.  Last read position: chr4H_1:231,770,562
+INFO	2025-06-02 13:03:36	GatherVcfs	Processed     2,680,000 records.  Elapsed time: 00:00:56s.  Time for last 10,000:    0s.  Last read position: chr4H_1:243,153,489
+INFO	2025-06-02 13:03:36	GatherVcfs	Processed     2,690,000 records.  Elapsed time: 00:00:56s.  Time for last 10,000:    0s.  Last read position: chr4H_1:249,700,405
+INFO	2025-06-02 13:03:36	GatherVcfs	Processed     2,700,000 records.  Elapsed time: 00:00:57s.  Time for last 10,000:    0s.  Last read position: chr4H_1:256,880,543
+INFO	2025-06-02 13:03:36	GatherVcfs	Processed     2,710,000 records.  Elapsed time: 00:00:57s.  Time for last 10,000:    0s.  Last read position: chr4H_1:262,380,483
+INFO	2025-06-02 13:03:36	GatherVcfs	Processed     2,720,000 records.  Elapsed time: 00:00:57s.  Time for last 10,000:    0s.  Last read position: chr4H_1:273,900,727
+INFO	2025-06-02 13:03:37	GatherVcfs	Processed     2,730,000 records.  Elapsed time: 00:00:57s.  Time for last 10,000:    0s.  Last read position: chr4H_1:279,959,529
+INFO	2025-06-02 13:03:37	GatherVcfs	Processed     2,740,000 records.  Elapsed time: 00:00:57s.  Time for last 10,000:    0s.  Last read position: chr4H_1:285,327,203
+INFO	2025-06-02 13:03:37	GatherVcfs	Processed     2,750,000 records.  Elapsed time: 00:00:58s.  Time for last 10,000:    0s.  Last read position: chr4H_1:293,171,831
+INFO	2025-06-02 13:03:37	GatherVcfs	Processed     2,760,000 records.  Elapsed time: 00:00:58s.  Time for last 10,000:    0s.  Last read position: chr4H_1:298,737,638
+INFO	2025-06-02 13:03:37	GatherVcfs	Processed     2,770,000 records.  Elapsed time: 00:00:58s.  Time for last 10,000:    0s.  Last read position: chr5H_0:2,906,725
+INFO	2025-06-02 13:03:38	GatherVcfs	Processed     2,780,000 records.  Elapsed time: 00:00:58s.  Time for last 10,000:    0s.  Last read position: chr5H_0:9,031,013
+INFO	2025-06-02 13:03:38	GatherVcfs	Processed     2,790,000 records.  Elapsed time: 00:00:58s.  Time for last 10,000:    0s.  Last read position: chr5H_0:14,707,155
+INFO	2025-06-02 13:03:38	GatherVcfs	Processed     2,800,000 records.  Elapsed time: 00:00:59s.  Time for last 10,000:    0s.  Last read position: chr5H_0:21,119,574
+INFO	2025-06-02 13:03:38	GatherVcfs	Processed     2,810,000 records.  Elapsed time: 00:00:59s.  Time for last 10,000:    0s.  Last read position: chr5H_0:25,732,390
+INFO	2025-06-02 13:03:39	GatherVcfs	Processed     2,820,000 records.  Elapsed time: 00:00:59s.  Time for last 10,000:    0s.  Last read position: chr5H_0:34,838,099
+INFO	2025-06-02 13:03:39	GatherVcfs	Processed     2,830,000 records.  Elapsed time: 00:00:59s.  Time for last 10,000:    0s.  Last read position: chr5H_0:40,466,351
+INFO	2025-06-02 13:03:39	GatherVcfs	Processed     2,840,000 records.  Elapsed time: 00:00:59s.  Time for last 10,000:    0s.  Last read position: chr5H_0:47,372,972
+INFO	2025-06-02 13:03:39	GatherVcfs	Processed     2,850,000 records.  Elapsed time: 00:01:00s.  Time for last 10,000:    0s.  Last read position: chr5H_0:60,909,542
+INFO	2025-06-02 13:03:39	GatherVcfs	Processed     2,860,000 records.  Elapsed time: 00:01:00s.  Time for last 10,000:    0s.  Last read position: chr5H_0:80,101,857
+INFO	2025-06-02 13:03:40	GatherVcfs	Processed     2,870,000 records.  Elapsed time: 00:01:00s.  Time for last 10,000:    0s.  Last read position: chr5H_0:116,765,322
+INFO	2025-06-02 13:03:40	GatherVcfs	Processed     2,880,000 records.  Elapsed time: 00:01:00s.  Time for last 10,000:    0s.  Last read position: chr5H_0:158,116,617
+INFO	2025-06-02 13:03:40	GatherVcfs	Processed     2,890,000 records.  Elapsed time: 00:01:00s.  Time for last 10,000:    0s.  Last read position: chr5H_0:204,184,212
+INFO	2025-06-02 13:03:40	GatherVcfs	Processed     2,900,000 records.  Elapsed time: 00:01:01s.  Time for last 10,000:    0s.  Last read position: chr5H_0:244,871,487
+INFO	2025-06-02 13:03:40	GatherVcfs	Processed     2,910,000 records.  Elapsed time: 00:01:01s.  Time for last 10,000:    0s.  Last read position: chr5H_0:285,715,512
+INFO	2025-06-02 13:03:41	GatherVcfs	Processed     2,920,000 records.  Elapsed time: 00:01:01s.  Time for last 10,000:    0s.  Last read position: chr5H_1:19,825,093
+INFO	2025-06-02 13:03:41	GatherVcfs	Processed     2,930,000 records.  Elapsed time: 00:01:01s.  Time for last 10,000:    0s.  Last read position: chr5H_1:26,203,401
+INFO	2025-06-02 13:03:41	GatherVcfs	Processed     2,940,000 records.  Elapsed time: 00:01:01s.  Time for last 10,000:    0s.  Last read position: chr5H_1:35,321,375
+INFO	2025-06-02 13:03:41	GatherVcfs	Processed     2,950,000 records.  Elapsed time: 00:01:02s.  Time for last 10,000:    0s.  Last read position: chr5H_1:42,920,786
+INFO	2025-06-02 13:03:41	GatherVcfs	Processed     2,960,000 records.  Elapsed time: 00:01:02s.  Time for last 10,000:    0s.  Last read position: chr5H_1:52,717,321
+INFO	2025-06-02 13:03:42	GatherVcfs	Processed     2,970,000 records.  Elapsed time: 00:01:02s.  Time for last 10,000:    0s.  Last read position: chr5H_1:61,738,644
+INFO	2025-06-02 13:03:42	GatherVcfs	Processed     2,980,000 records.  Elapsed time: 00:01:02s.  Time for last 10,000:    0s.  Last read position: chr5H_1:70,524,670
+INFO	2025-06-02 13:03:42	GatherVcfs	Processed     2,990,000 records.  Elapsed time: 00:01:03s.  Time for last 10,000:    0s.  Last read position: chr5H_1:79,102,957
+INFO	2025-06-02 13:03:42	GatherVcfs	Processed     3,000,000 records.  Elapsed time: 00:01:03s.  Time for last 10,000:    0s.  Last read position: chr5H_1:84,190,809
+INFO	2025-06-02 13:03:42	GatherVcfs	Processed     3,010,000 records.  Elapsed time: 00:01:03s.  Time for last 10,000:    0s.  Last read position: chr5H_1:97,777,366
+INFO	2025-06-02 13:03:43	GatherVcfs	Processed     3,020,000 records.  Elapsed time: 00:01:03s.  Time for last 10,000:    0s.  Last read position: chr5H_1:108,151,122
+INFO	2025-06-02 13:03:43	GatherVcfs	Processed     3,030,000 records.  Elapsed time: 00:01:03s.  Time for last 10,000:    0s.  Last read position: chr5H_1:113,498,524
+INFO	2025-06-02 13:03:43	GatherVcfs	Processed     3,040,000 records.  Elapsed time: 00:01:03s.  Time for last 10,000:    0s.  Last read position: chr5H_1:118,741,681
+INFO	2025-06-02 13:03:43	GatherVcfs	Processed     3,050,000 records.  Elapsed time: 00:01:04s.  Time for last 10,000:    0s.  Last read position: chr5H_1:124,520,539
+INFO	2025-06-02 13:03:43	GatherVcfs	Processed     3,060,000 records.  Elapsed time: 00:01:04s.  Time for last 10,000:    0s.  Last read position: chr5H_1:129,373,600
+INFO	2025-06-02 13:03:44	GatherVcfs	Processed     3,070,000 records.  Elapsed time: 00:01:04s.  Time for last 10,000:    0s.  Last read position: chr5H_1:135,751,348
+INFO	2025-06-02 13:03:44	GatherVcfs	Processed     3,080,000 records.  Elapsed time: 00:01:04s.  Time for last 10,000:    0s.  Last read position: chr5H_1:147,776,103
+INFO	2025-06-02 13:03:44	GatherVcfs	Processed     3,090,000 records.  Elapsed time: 00:01:05s.  Time for last 10,000:    0s.  Last read position: chr5H_1:152,873,466
+INFO	2025-06-02 13:03:44	GatherVcfs	Processed     3,100,000 records.  Elapsed time: 00:01:05s.  Time for last 10,000:    0s.  Last read position: chr5H_1:159,082,941
+INFO	2025-06-02 13:03:44	GatherVcfs	Processed     3,110,000 records.  Elapsed time: 00:01:05s.  Time for last 10,000:    0s.  Last read position: chr5H_1:168,518,227
+INFO	2025-06-02 13:03:45	GatherVcfs	Processed     3,120,000 records.  Elapsed time: 00:01:05s.  Time for last 10,000:    0s.  Last read position: chr5H_1:175,188,313
+INFO	2025-06-02 13:03:45	GatherVcfs	Processed     3,130,000 records.  Elapsed time: 00:01:05s.  Time for last 10,000:    0s.  Last read position: chr5H_1:180,153,273
+INFO	2025-06-02 13:03:45	GatherVcfs	Processed     3,140,000 records.  Elapsed time: 00:01:06s.  Time for last 10,000:    0s.  Last read position: chr5H_1:185,029,277
+INFO	2025-06-02 13:03:45	GatherVcfs	Processed     3,150,000 records.  Elapsed time: 00:01:06s.  Time for last 10,000:    0s.  Last read position: chr5H_1:190,389,169
+INFO	2025-06-02 13:03:45	GatherVcfs	Processed     3,160,000 records.  Elapsed time: 00:01:06s.  Time for last 10,000:    0s.  Last read position: chr5H_1:195,469,664
+INFO	2025-06-02 13:03:46	GatherVcfs	Processed     3,170,000 records.  Elapsed time: 00:01:06s.  Time for last 10,000:    0s.  Last read position: chr5H_1:200,057,755
+INFO	2025-06-02 13:03:46	GatherVcfs	Processed     3,180,000 records.  Elapsed time: 00:01:06s.  Time for last 10,000:    0s.  Last read position: chr5H_1:206,196,573
+INFO	2025-06-02 13:03:46	GatherVcfs	Processed     3,190,000 records.  Elapsed time: 00:01:07s.  Time for last 10,000:    0s.  Last read position: chr5H_1:210,825,742
+INFO	2025-06-02 13:03:46	GatherVcfs	Processed     3,200,000 records.  Elapsed time: 00:01:07s.  Time for last 10,000:    0s.  Last read position: chr5H_1:216,768,633
+INFO	2025-06-02 13:03:46	GatherVcfs	Processed     3,210,000 records.  Elapsed time: 00:01:07s.  Time for last 10,000:    0s.  Last read position: chr5H_1:221,542,785
+INFO	2025-06-02 13:03:47	GatherVcfs	Processed     3,220,000 records.  Elapsed time: 00:01:07s.  Time for last 10,000:    0s.  Last read position: chr5H_1:227,823,339
+INFO	2025-06-02 13:03:47	GatherVcfs	Processed     3,230,000 records.  Elapsed time: 00:01:07s.  Time for last 10,000:    0s.  Last read position: chr5H_1:235,457,439
+INFO	2025-06-02 13:03:47	GatherVcfs	Processed     3,240,000 records.  Elapsed time: 00:01:08s.  Time for last 10,000:    0s.  Last read position: chr5H_1:240,374,846
+INFO	2025-06-02 13:03:47	GatherVcfs	Processed     3,250,000 records.  Elapsed time: 00:01:08s.  Time for last 10,000:    0s.  Last read position: chr5H_1:248,654,747
+INFO	2025-06-02 13:03:47	GatherVcfs	Processed     3,260,000 records.  Elapsed time: 00:01:08s.  Time for last 10,000:    0s.  Last read position: chr5H_1:257,699,222
+INFO	2025-06-02 13:03:48	GatherVcfs	Processed     3,270,000 records.  Elapsed time: 00:01:08s.  Time for last 10,000:    0s.  Last read position: chr5H_1:262,963,861
+INFO	2025-06-02 13:03:48	GatherVcfs	Processed     3,280,000 records.  Elapsed time: 00:01:08s.  Time for last 10,000:    0s.  Last read position: chr5H_1:268,126,153
+INFO	2025-06-02 13:03:48	GatherVcfs	Processed     3,290,000 records.  Elapsed time: 00:01:09s.  Time for last 10,000:    0s.  Last read position: chr5H_1:272,352,342
+INFO	2025-06-02 13:03:48	GatherVcfs	Processed     3,300,000 records.  Elapsed time: 00:01:09s.  Time for last 10,000:    0s.  Last read position: chr5H_1:277,130,975
+INFO	2025-06-02 13:03:48	GatherVcfs	Processed     3,310,000 records.  Elapsed time: 00:01:09s.  Time for last 10,000:    0s.  Last read position: chr5H_1:280,998,732
+INFO	2025-06-02 13:03:49	GatherVcfs	Processed     3,320,000 records.  Elapsed time: 00:01:09s.  Time for last 10,000:    0s.  Last read position: chr5H_1:285,425,248
+INFO	2025-06-02 13:03:49	GatherVcfs	Processed     3,330,000 records.  Elapsed time: 00:01:09s.  Time for last 10,000:    0s.  Last read position: chr5H_1:290,477,237
+INFO	2025-06-02 13:03:49	GatherVcfs	Processed     3,340,000 records.  Elapsed time: 00:01:10s.  Time for last 10,000:    0s.  Last read position: chr6H_0:4,311,731
+INFO	2025-06-02 13:03:49	GatherVcfs	Processed     3,350,000 records.  Elapsed time: 00:01:10s.  Time for last 10,000:    0s.  Last read position: chr6H_0:8,857,387
+INFO	2025-06-02 13:03:50	GatherVcfs	Processed     3,360,000 records.  Elapsed time: 00:01:10s.  Time for last 10,000:    0s.  Last read position: chr6H_0:13,436,290
+INFO	2025-06-02 13:03:50	GatherVcfs	Processed     3,370,000 records.  Elapsed time: 00:01:10s.  Time for last 10,000:    0s.  Last read position: chr6H_0:17,671,612
+INFO	2025-06-02 13:03:50	GatherVcfs	Processed     3,380,000 records.  Elapsed time: 00:01:10s.  Time for last 10,000:    0s.  Last read position: chr6H_0:23,746,848
+INFO	2025-06-02 13:03:50	GatherVcfs	Processed     3,390,000 records.  Elapsed time: 00:01:11s.  Time for last 10,000:    0s.  Last read position: chr6H_0:29,011,296
+INFO	2025-06-02 13:03:50	GatherVcfs	Processed     3,400,000 records.  Elapsed time: 00:01:11s.  Time for last 10,000:    0s.  Last read position: chr6H_0:33,770,867
+INFO	2025-06-02 13:03:51	GatherVcfs	Processed     3,410,000 records.  Elapsed time: 00:01:11s.  Time for last 10,000:    0s.  Last read position: chr6H_0:39,484,272
+INFO	2025-06-02 13:03:51	GatherVcfs	Processed     3,420,000 records.  Elapsed time: 00:01:11s.  Time for last 10,000:    0s.  Last read position: chr6H_0:46,283,584
+INFO	2025-06-02 13:03:51	GatherVcfs	Processed     3,430,000 records.  Elapsed time: 00:01:11s.  Time for last 10,000:    0s.  Last read position: chr6H_0:60,010,033
+INFO	2025-06-02 13:03:51	GatherVcfs	Processed     3,440,000 records.  Elapsed time: 00:01:12s.  Time for last 10,000:    0s.  Last read position: chr6H_0:67,318,629
+INFO	2025-06-02 13:03:51	GatherVcfs	Processed     3,450,000 records.  Elapsed time: 00:01:12s.  Time for last 10,000:    0s.  Last read position: chr6H_0:78,295,235
+INFO	2025-06-02 13:03:52	GatherVcfs	Processed     3,460,000 records.  Elapsed time: 00:01:12s.  Time for last 10,000:    0s.  Last read position: chr6H_0:88,999,389
+INFO	2025-06-02 13:03:52	GatherVcfs	Processed     3,470,000 records.  Elapsed time: 00:01:12s.  Time for last 10,000:    0s.  Last read position: chr6H_0:96,145,693
+INFO	2025-06-02 13:03:52	GatherVcfs	Processed     3,480,000 records.  Elapsed time: 00:01:12s.  Time for last 10,000:    0s.  Last read position: chr6H_0:106,051,649
+INFO	2025-06-02 13:03:52	GatherVcfs	Processed     3,490,000 records.  Elapsed time: 00:01:13s.  Time for last 10,000:    0s.  Last read position: chr6H_0:114,490,299
+INFO	2025-06-02 13:03:52	GatherVcfs	Processed     3,500,000 records.  Elapsed time: 00:01:13s.  Time for last 10,000:    0s.  Last read position: chr6H_0:121,811,758
+INFO	2025-06-02 13:03:53	GatherVcfs	Processed     3,510,000 records.  Elapsed time: 00:01:13s.  Time for last 10,000:    0s.  Last read position: chr6H_0:127,846,603
+INFO	2025-06-02 13:03:53	GatherVcfs	Processed     3,520,000 records.  Elapsed time: 00:01:13s.  Time for last 10,000:    0s.  Last read position: chr6H_0:136,308,602
+INFO	2025-06-02 13:03:53	GatherVcfs	Processed     3,530,000 records.  Elapsed time: 00:01:13s.  Time for last 10,000:    0s.  Last read position: chr6H_0:153,388,995
+INFO	2025-06-02 13:03:53	GatherVcfs	Processed     3,540,000 records.  Elapsed time: 00:01:14s.  Time for last 10,000:    0s.  Last read position: chr6H_0:162,275,683
+INFO	2025-06-02 13:03:53	GatherVcfs	Processed     3,550,000 records.  Elapsed time: 00:01:14s.  Time for last 10,000:    0s.  Last read position: chr6H_0:170,907,749
+INFO	2025-06-02 13:03:54	GatherVcfs	Processed     3,560,000 records.  Elapsed time: 00:01:14s.  Time for last 10,000:    0s.  Last read position: chr6H_0:177,581,826
+INFO	2025-06-02 13:03:54	GatherVcfs	Processed     3,570,000 records.  Elapsed time: 00:01:14s.  Time for last 10,000:    0s.  Last read position: chr6H_0:187,357,832
+INFO	2025-06-02 13:03:54	GatherVcfs	Processed     3,580,000 records.  Elapsed time: 00:01:15s.  Time for last 10,000:    0s.  Last read position: chr6H_0:198,660,955
+INFO	2025-06-02 13:03:54	GatherVcfs	Processed     3,590,000 records.  Elapsed time: 00:01:15s.  Time for last 10,000:    0s.  Last read position: chr6H_0:213,197,161
+INFO	2025-06-02 13:03:54	GatherVcfs	Processed     3,600,000 records.  Elapsed time: 00:01:15s.  Time for last 10,000:    0s.  Last read position: chr6H_0:227,042,240
+INFO	2025-06-02 13:03:55	GatherVcfs	Processed     3,610,000 records.  Elapsed time: 00:01:15s.  Time for last 10,000:    0s.  Last read position: chr6H_0:242,137,775
+INFO	2025-06-02 13:03:55	GatherVcfs	Processed     3,620,000 records.  Elapsed time: 00:01:15s.  Time for last 10,000:    0s.  Last read position: chr6H_0:255,814,961
+INFO	2025-06-02 13:03:55	GatherVcfs	Processed     3,630,000 records.  Elapsed time: 00:01:16s.  Time for last 10,000:    0s.  Last read position: chr6H_0:269,103,754
+INFO	2025-06-02 13:03:55	GatherVcfs	Processed     3,640,000 records.  Elapsed time: 00:01:16s.  Time for last 10,000:    0s.  Last read position: chr6H_1:1,406,800
+INFO	2025-06-02 13:03:55	GatherVcfs	Processed     3,650,000 records.  Elapsed time: 00:01:16s.  Time for last 10,000:    0s.  Last read position: chr6H_1:15,897,237
+INFO	2025-06-02 13:03:56	GatherVcfs	Processed     3,660,000 records.  Elapsed time: 00:01:16s.  Time for last 10,000:    0s.  Last read position: chr6H_1:30,198,922
+INFO	2025-06-02 13:03:56	GatherVcfs	Processed     3,670,000 records.  Elapsed time: 00:01:16s.  Time for last 10,000:    0s.  Last read position: chr6H_1:41,680,965
+INFO	2025-06-02 13:03:56	GatherVcfs	Processed     3,680,000 records.  Elapsed time: 00:01:17s.  Time for last 10,000:    0s.  Last read position: chr6H_1:53,480,833
+INFO	2025-06-02 13:03:56	GatherVcfs	Processed     3,690,000 records.  Elapsed time: 00:01:17s.  Time for last 10,000:    0s.  Last read position: chr6H_1:60,457,839
+INFO	2025-06-02 13:03:56	GatherVcfs	Processed     3,700,000 records.  Elapsed time: 00:01:17s.  Time for last 10,000:    0s.  Last read position: chr6H_1:65,661,769
+INFO	2025-06-02 13:03:57	GatherVcfs	Processed     3,710,000 records.  Elapsed time: 00:01:17s.  Time for last 10,000:    0s.  Last read position: chr6H_1:70,664,782
+INFO	2025-06-02 13:03:57	GatherVcfs	Processed     3,720,000 records.  Elapsed time: 00:01:17s.  Time for last 10,000:    0s.  Last read position: chr6H_1:74,966,638
+INFO	2025-06-02 13:03:57	GatherVcfs	Processed     3,730,000 records.  Elapsed time: 00:01:18s.  Time for last 10,000:    0s.  Last read position: chr6H_1:80,571,523
+INFO	2025-06-02 13:03:57	GatherVcfs	Processed     3,740,000 records.  Elapsed time: 00:01:18s.  Time for last 10,000:    0s.  Last read position: chr6H_1:89,706,025
+INFO	2025-06-02 13:03:58	GatherVcfs	Processed     3,750,000 records.  Elapsed time: 00:01:18s.  Time for last 10,000:    0s.  Last read position: chr6H_1:94,725,801
+INFO	2025-06-02 13:03:58	GatherVcfs	Processed     3,760,000 records.  Elapsed time: 00:01:18s.  Time for last 10,000:    0s.  Last read position: chr6H_1:103,189,416
+INFO	2025-06-02 13:03:58	GatherVcfs	Processed     3,770,000 records.  Elapsed time: 00:01:19s.  Time for last 10,000:    0s.  Last read position: chr6H_1:108,167,251
+INFO	2025-06-02 13:03:58	GatherVcfs	Processed     3,780,000 records.  Elapsed time: 00:01:19s.  Time for last 10,000:    0s.  Last read position: chr6H_1:112,315,578
+INFO	2025-06-02 13:03:58	GatherVcfs	Processed     3,790,000 records.  Elapsed time: 00:01:19s.  Time for last 10,000:    0s.  Last read position: chr6H_1:117,759,574
+INFO	2025-06-02 13:03:59	GatherVcfs	Processed     3,800,000 records.  Elapsed time: 00:01:19s.  Time for last 10,000:    0s.  Last read position: chr6H_1:122,782,245
+INFO	2025-06-02 13:03:59	GatherVcfs	Processed     3,810,000 records.  Elapsed time: 00:01:19s.  Time for last 10,000:    0s.  Last read position: chr6H_1:129,423,300
+INFO	2025-06-02 13:03:59	GatherVcfs	Processed     3,820,000 records.  Elapsed time: 00:01:20s.  Time for last 10,000:    0s.  Last read position: chr6H_1:157,449,375
+INFO	2025-06-02 13:03:59	GatherVcfs	Processed     3,830,000 records.  Elapsed time: 00:01:20s.  Time for last 10,000:    0s.  Last read position: chr6H_1:171,523,269
+INFO	2025-06-02 13:03:59	GatherVcfs	Processed     3,840,000 records.  Elapsed time: 00:01:20s.  Time for last 10,000:    0s.  Last read position: chr6H_1:179,471,640
+INFO	2025-06-02 13:04:00	GatherVcfs	Processed     3,850,000 records.  Elapsed time: 00:01:20s.  Time for last 10,000:    0s.  Last read position: chr6H_1:184,582,772
+INFO	2025-06-02 13:04:00	GatherVcfs	Processed     3,860,000 records.  Elapsed time: 00:01:20s.  Time for last 10,000:    0s.  Last read position: chr6H_1:191,596,698
+INFO	2025-06-02 13:04:00	GatherVcfs	Processed     3,870,000 records.  Elapsed time: 00:01:21s.  Time for last 10,000:    0s.  Last read position: chr6H_1:197,894,396
+INFO	2025-06-02 13:04:00	GatherVcfs	Processed     3,880,000 records.  Elapsed time: 00:01:21s.  Time for last 10,000:    0s.  Last read position: chr6H_1:203,894,216
+INFO	2025-06-02 13:04:01	GatherVcfs	Processed     3,890,000 records.  Elapsed time: 00:01:21s.  Time for last 10,000:    0s.  Last read position: chr6H_1:210,402,839
+INFO	2025-06-02 13:04:01	GatherVcfs	Processed     3,900,000 records.  Elapsed time: 00:01:21s.  Time for last 10,000:    0s.  Last read position: chr6H_1:219,873,202
+INFO	2025-06-02 13:04:01	GatherVcfs	Processed     3,910,000 records.  Elapsed time: 00:01:21s.  Time for last 10,000:    0s.  Last read position: chr6H_1:225,416,992
+INFO	2025-06-02 13:04:01	GatherVcfs	Processed     3,920,000 records.  Elapsed time: 00:01:22s.  Time for last 10,000:    0s.  Last read position: chr6H_1:232,234,221
+INFO	2025-06-02 13:04:01	GatherVcfs	Processed     3,930,000 records.  Elapsed time: 00:01:22s.  Time for last 10,000:    0s.  Last read position: chr6H_1:239,256,599
+INFO	2025-06-02 13:04:02	GatherVcfs	Processed     3,940,000 records.  Elapsed time: 00:01:22s.  Time for last 10,000:    0s.  Last read position: chr6H_1:244,800,735
+INFO	2025-06-02 13:04:02	GatherVcfs	Processed     3,950,000 records.  Elapsed time: 00:01:22s.  Time for last 10,000:    0s.  Last read position: chr6H_1:254,565,707
+INFO	2025-06-02 13:04:02	GatherVcfs	Processed     3,960,000 records.  Elapsed time: 00:01:23s.  Time for last 10,000:    0s.  Last read position: chr6H_1:261,999,251
+INFO	2025-06-02 13:04:02	GatherVcfs	Processed     3,970,000 records.  Elapsed time: 00:01:23s.  Time for last 10,000:    0s.  Last read position: chr6H_1:269,486,239
+INFO	2025-06-02 13:04:02	GatherVcfs	Processed     3,980,000 records.  Elapsed time: 00:01:23s.  Time for last 10,000:    0s.  Last read position: chr6H_1:274,890,697
+INFO	2025-06-02 13:04:03	GatherVcfs	Processed     3,990,000 records.  Elapsed time: 00:01:23s.  Time for last 10,000:    0s.  Last read position: chr6H_1:277,801,295
+INFO	2025-06-02 13:04:03	GatherVcfs	Processed     4,000,000 records.  Elapsed time: 00:01:23s.  Time for last 10,000:    0s.  Last read position: chr7H_0:2,927,593
+INFO	2025-06-02 13:04:03	GatherVcfs	Processed     4,010,000 records.  Elapsed time: 00:01:24s.  Time for last 10,000:    0s.  Last read position: chr7H_0:5,233,046
+INFO	2025-06-02 13:04:03	GatherVcfs	Processed     4,020,000 records.  Elapsed time: 00:01:24s.  Time for last 10,000:    0s.  Last read position: chr7H_0:10,020,810
+INFO	2025-06-02 13:04:04	GatherVcfs	Processed     4,030,000 records.  Elapsed time: 00:01:24s.  Time for last 10,000:    0s.  Last read position: chr7H_0:13,985,363
+INFO	2025-06-02 13:04:04	GatherVcfs	Processed     4,040,000 records.  Elapsed time: 00:01:24s.  Time for last 10,000:    0s.  Last read position: chr7H_0:17,865,394
+INFO	2025-06-02 13:04:04	GatherVcfs	Processed     4,050,000 records.  Elapsed time: 00:01:25s.  Time for last 10,000:    0s.  Last read position: chr7H_0:25,253,952
+INFO	2025-06-02 13:04:04	GatherVcfs	Processed     4,060,000 records.  Elapsed time: 00:01:25s.  Time for last 10,000:    0s.  Last read position: chr7H_0:29,946,076
+INFO	2025-06-02 13:04:04	GatherVcfs	Processed     4,070,000 records.  Elapsed time: 00:01:25s.  Time for last 10,000:    0s.  Last read position: chr7H_0:34,747,005
+INFO	2025-06-02 13:04:05	GatherVcfs	Processed     4,080,000 records.  Elapsed time: 00:01:25s.  Time for last 10,000:    0s.  Last read position: chr7H_0:42,259,051
+INFO	2025-06-02 13:04:05	GatherVcfs	Processed     4,090,000 records.  Elapsed time: 00:01:25s.  Time for last 10,000:    0s.  Last read position: chr7H_0:48,789,017
+INFO	2025-06-02 13:04:05	GatherVcfs	Processed     4,100,000 records.  Elapsed time: 00:01:26s.  Time for last 10,000:    0s.  Last read position: chr7H_0:53,704,560
+INFO	2025-06-02 13:04:05	GatherVcfs	Processed     4,110,000 records.  Elapsed time: 00:01:26s.  Time for last 10,000:    0s.  Last read position: chr7H_0:60,882,551
+INFO	2025-06-02 13:04:05	GatherVcfs	Processed     4,120,000 records.  Elapsed time: 00:01:26s.  Time for last 10,000:    0s.  Last read position: chr7H_0:65,870,136
+INFO	2025-06-02 13:04:06	GatherVcfs	Processed     4,130,000 records.  Elapsed time: 00:01:26s.  Time for last 10,000:    0s.  Last read position: chr7H_0:71,144,106
+INFO	2025-06-02 13:04:06	GatherVcfs	Processed     4,140,000 records.  Elapsed time: 00:01:26s.  Time for last 10,000:    0s.  Last read position: chr7H_0:79,591,587
+INFO	2025-06-02 13:04:06	GatherVcfs	Processed     4,150,000 records.  Elapsed time: 00:01:27s.  Time for last 10,000:    0s.  Last read position: chr7H_0:84,590,528
+INFO	2025-06-02 13:04:06	GatherVcfs	Processed     4,160,000 records.  Elapsed time: 00:01:27s.  Time for last 10,000:    0s.  Last read position: chr7H_0:93,772,821
+INFO	2025-06-02 13:04:06	GatherVcfs	Processed     4,170,000 records.  Elapsed time: 00:01:27s.  Time for last 10,000:    0s.  Last read position: chr7H_0:98,679,684
+INFO	2025-06-02 13:04:07	GatherVcfs	Processed     4,180,000 records.  Elapsed time: 00:01:27s.  Time for last 10,000:    0s.  Last read position: chr7H_0:104,614,593
+INFO	2025-06-02 13:04:07	GatherVcfs	Processed     4,190,000 records.  Elapsed time: 00:01:27s.  Time for last 10,000:    0s.  Last read position: chr7H_0:110,002,708
+INFO	2025-06-02 13:04:07	GatherVcfs	Processed     4,200,000 records.  Elapsed time: 00:01:27s.  Time for last 10,000:    0s.  Last read position: chr7H_0:117,271,518
+INFO	2025-06-02 13:04:07	GatherVcfs	Processed     4,210,000 records.  Elapsed time: 00:01:28s.  Time for last 10,000:    0s.  Last read position: chr7H_0:122,434,142
+INFO	2025-06-02 13:04:07	GatherVcfs	Processed     4,220,000 records.  Elapsed time: 00:01:28s.  Time for last 10,000:    0s.  Last read position: chr7H_0:154,850,325
+INFO	2025-06-02 13:04:08	GatherVcfs	Processed     4,230,000 records.  Elapsed time: 00:01:28s.  Time for last 10,000:    0s.  Last read position: chr7H_0:187,375,577
+INFO	2025-06-02 13:04:08	GatherVcfs	Processed     4,240,000 records.  Elapsed time: 00:01:28s.  Time for last 10,000:    0s.  Last read position: chr7H_0:217,556,871
+INFO	2025-06-02 13:04:08	GatherVcfs	Processed     4,250,000 records.  Elapsed time: 00:01:29s.  Time for last 10,000:    0s.  Last read position: chr7H_0:263,338,359
+INFO	2025-06-02 13:04:08	GatherVcfs	Processed     4,260,000 records.  Elapsed time: 00:01:29s.  Time for last 10,000:    0s.  Last read position: chr7H_0:311,409,665
+INFO	2025-06-02 13:04:08	GatherVcfs	Processed     4,270,000 records.  Elapsed time: 00:01:29s.  Time for last 10,000:    0s.  Last read position: chr7H_1:41,107,295
+INFO	2025-06-02 13:04:09	GatherVcfs	Processed     4,280,000 records.  Elapsed time: 00:01:29s.  Time for last 10,000:    0s.  Last read position: chr7H_1:87,689,234
+INFO	2025-06-02 13:04:09	GatherVcfs	Processed     4,290,000 records.  Elapsed time: 00:01:29s.  Time for last 10,000:    0s.  Last read position: chr7H_1:113,919,606
+INFO	2025-06-02 13:04:09	GatherVcfs	Processed     4,300,000 records.  Elapsed time: 00:01:30s.  Time for last 10,000:    0s.  Last read position: chr7H_1:120,063,431
+INFO	2025-06-02 13:04:09	GatherVcfs	Processed     4,310,000 records.  Elapsed time: 00:01:30s.  Time for last 10,000:    0s.  Last read position: chr7H_1:136,613,997
+INFO	2025-06-02 13:04:09	GatherVcfs	Processed     4,320,000 records.  Elapsed time: 00:01:30s.  Time for last 10,000:    0s.  Last read position: chr7H_1:141,768,967
+INFO	2025-06-02 13:04:10	GatherVcfs	Processed     4,330,000 records.  Elapsed time: 00:01:30s.  Time for last 10,000:    0s.  Last read position: chr7H_1:148,002,275
+INFO	2025-06-02 13:04:10	GatherVcfs	Processed     4,340,000 records.  Elapsed time: 00:01:30s.  Time for last 10,000:    0s.  Last read position: chr7H_1:152,958,786
+INFO	2025-06-02 13:04:10	GatherVcfs	Processed     4,350,000 records.  Elapsed time: 00:01:31s.  Time for last 10,000:    0s.  Last read position: chr7H_1:156,855,774
+INFO	2025-06-02 13:04:10	GatherVcfs	Processed     4,360,000 records.  Elapsed time: 00:01:31s.  Time for last 10,000:    0s.  Last read position: chr7H_1:162,254,043
+INFO	2025-06-02 13:04:10	GatherVcfs	Processed     4,370,000 records.  Elapsed time: 00:01:31s.  Time for last 10,000:    0s.  Last read position: chr7H_1:167,381,628
+INFO	2025-06-02 13:04:11	GatherVcfs	Processed     4,380,000 records.  Elapsed time: 00:01:31s.  Time for last 10,000:    0s.  Last read position: chr7H_1:173,807,418
+INFO	2025-06-02 13:04:11	GatherVcfs	Processed     4,390,000 records.  Elapsed time: 00:01:31s.  Time for last 10,000:    0s.  Last read position: chr7H_1:181,701,494
+INFO	2025-06-02 13:04:11	GatherVcfs	Processed     4,400,000 records.  Elapsed time: 00:01:32s.  Time for last 10,000:    0s.  Last read position: chr7H_1:188,063,519
+INFO	2025-06-02 13:04:11	GatherVcfs	Processed     4,410,000 records.  Elapsed time: 00:01:32s.  Time for last 10,000:    0s.  Last read position: chr7H_1:194,868,317
+INFO	2025-06-02 13:04:11	GatherVcfs	Processed     4,420,000 records.  Elapsed time: 00:01:32s.  Time for last 10,000:    0s.  Last read position: chr7H_1:208,524,972
+INFO	2025-06-02 13:04:12	GatherVcfs	Processed     4,430,000 records.  Elapsed time: 00:01:32s.  Time for last 10,000:    0s.  Last read position: chr7H_1:229,787,081
+INFO	2025-06-02 13:04:12	GatherVcfs	Processed     4,440,000 records.  Elapsed time: 00:01:32s.  Time for last 10,000:    0s.  Last read position: chr7H_1:241,473,345
+INFO	2025-06-02 13:04:12	GatherVcfs	Processed     4,450,000 records.  Elapsed time: 00:01:33s.  Time for last 10,000:    0s.  Last read position: chr7H_1:256,439,495
+INFO	2025-06-02 13:04:12	GatherVcfs	Processed     4,460,000 records.  Elapsed time: 00:01:33s.  Time for last 10,000:    0s.  Last read position: chr7H_1:261,724,532
+INFO	2025-06-02 13:04:12	GatherVcfs	Processed     4,470,000 records.  Elapsed time: 00:01:33s.  Time for last 10,000:    0s.  Last read position: chr7H_1:269,643,925
+INFO	2025-06-02 13:04:13	GatherVcfs	Processed     4,480,000 records.  Elapsed time: 00:01:33s.  Time for last 10,000:    0s.  Last read position: chr7H_1:276,598,777
+INFO	2025-06-02 13:04:13	GatherVcfs	Processed     4,490,000 records.  Elapsed time: 00:01:33s.  Time for last 10,000:    0s.  Last read position: chr7H_1:282,803,281
+INFO	2025-06-02 13:04:13	GatherVcfs	Processed     4,500,000 records.  Elapsed time: 00:01:34s.  Time for last 10,000:    0s.  Last read position: chr7H_1:287,801,545
+INFO	2025-06-02 13:04:13	GatherVcfs	Processed     4,510,000 records.  Elapsed time: 00:01:34s.  Time for last 10,000:    0s.  Last read position: chr7H_1:292,818,414
+INFO	2025-06-02 13:04:13	GatherVcfs	Processed     4,520,000 records.  Elapsed time: 00:01:34s.  Time for last 10,000:    0s.  Last read position: chr7H_1:297,204,543
+INFO	2025-06-02 13:04:14	GatherVcfs	Processed     4,530,000 records.  Elapsed time: 00:01:34s.  Time for last 10,000:    0s.  Last read position: chr7H_1:301,145,733
+INFO	2025-06-02 13:04:14	GatherVcfs	Processed     4,540,000 records.  Elapsed time: 00:01:34s.  Time for last 10,000:    0s.  Last read position: chr7H_1:307,906,700
+INFO	2025-06-02 13:04:14	GatherVcfs	Processed     4,550,000 records.  Elapsed time: 00:01:35s.  Time for last 10,000:    0s.  Last read position: chrUn:11,546,614
+[Mon Jun 02 13:04:15 CEST 2025] picard.vcf.GatherVcfs done. Elapsed time: 1.61 minutes.
+Runtime.totalMemory()=1241513984
+Tool returned:
+0
