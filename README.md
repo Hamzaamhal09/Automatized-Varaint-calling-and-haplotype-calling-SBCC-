@@ -49,7 +49,15 @@ Defined in the PHG_snakmake.smk script. This section uses PHG to identify haplot
 
     find_paths
     Infers the most probable haplotype paths per sample.
-    Merged single hvcf file into one hvcf file
+    
+    Merged hvcf files
+    Merge the single hvcf files into one hvcf file
+
+    # instalation guide 
+
+    first you will have to install conda and snakemke 
+
+    <pre> ```bash conda create -c conda-forge -c bioconda -n snakemake snakemake ``` </pre>
 
 
 
