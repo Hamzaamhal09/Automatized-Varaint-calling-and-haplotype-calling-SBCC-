@@ -57,7 +57,7 @@ Defined in the PHG_snakmake.smk script. This section uses PHG to identify haplot
 
     first you will have to install conda and snakemke 
     
-<pre> ```bash $ conda create -c conda-forge -c bioconda -n snakemake snakemake ``` </pre>
+<pre> ```$ conda create -c conda-forge -c bioconda -n snakemake snakemake ``` </pre>
 
 
 
