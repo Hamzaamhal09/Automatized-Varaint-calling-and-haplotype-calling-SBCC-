@@ -65,8 +65,19 @@ After installing Conda, create a new environment for Snakemake (as mentioned in 
 ```
 conda create -c conda-forge -c bioconda -n snakemake snakemake
 ```
+ we need to install **yq** a command-line tool for parsing and manipulating YAML files, used to read values from the configuration files in the scripts.
 
+```
+conda install -c conda-forge yq
+```
 
+Install FastQC and MultiQC to analyse the sequence read quality
+
+```
+conda install -c bioconda fastqc
+conda install -c bioconda multiqc
+
+```
 
 
 
