@@ -55,10 +55,11 @@ Defined in the PHG_snakmake.smk script. This section uses PHG to identify haplot
 
 # instalation guide 
 
-Before running the pipeline, you need to install **Conda** and **Snakemake**.
+Before running the pipeline, you need to install **Conda** and **Snakemake** and **PHG** (In case you want to run the haplotype determination part only):
 
 - [Conda installation guide for Linux](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)  
 -  [Snakemake official installation instructions](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html)
+-  [Practical haplotype graph](https://phg.maizegenetics.net/installation/)
 
 After installing Conda, create a new environment for Snakemake (as mentioned in the tutorial) with :
 
