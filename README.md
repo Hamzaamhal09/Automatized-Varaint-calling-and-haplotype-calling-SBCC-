@@ -79,7 +79,7 @@ conda install -c bioconda multiqc
 
 ```
 
-Install **bwa-mem2** and **samtools** for read mapping and BAM file processing:
+Install **bwa-mem2** and **samtools** for read mapping and BAM file processing:bcftools
 
 ```
 conda install -c bioconda bwa-mem2 samtools
@@ -97,7 +97,11 @@ Install **GATK** for variant calling :
 conda install -c bioconda gatk
 ```
 
+Install **bcftools** :
 
+```
+conda install -c bioconda bcftools
+```
 
 
 
