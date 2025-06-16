@@ -55,11 +55,17 @@ Defined in the PHG_snakmake.smk script. This section uses PHG to identify haplot
 
 # instalation guide 
 
-    first you will have to install conda and snakemke 
-    
+Before running the pipeline, you need to install **Conda** and **Snakemake**.
+
+- [Conda installation guide for Linux](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)  
+-  [Snakemake official installation instructions](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html)
+
+After installing Conda, create a new environment for Snakemake (as mentioned in the tutorial) with :
+
 ```
 conda create -c conda-forge -c bioconda -n snakemake snakemake
 ```
+
 
 
 
